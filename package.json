@@ -1,5 +1,5 @@
 {
-  "name": "bae-nodejs",
+  "name": "koa-login",
   "version": "1.0.0",
   "author": "bae",
   "description": "The first bae nodejs app!",
@@ -9,6 +9,10 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "koa": "^1.1.1",
+    "koa-bodyparser": "^2.0.1",
+    "koa-ejs": "^3.0.0",
+    "koa-router": "^5.3.0",
+    "koa-session": "^4.0.0",
     "raw-body": "^2.2.0",
     "request": "^2.81.0",
     "sha1": "^1.1.1",
