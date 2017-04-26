@@ -1,16 +1,28 @@
-<!doctype html>
-<html>
-<head>
-    <title><%= title %></title>
-    <meta name="applicable-device" content="mobile" />
-    <link rel="canonical" href="http://www.yihaojiaju.com">
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
-    <meta content="yes" name="apple-mobile-web-app-capable" />
-    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-    <meta content="telephone=no" name="format-detection" />
-</head>
-<body>
-	
-</body>
-</html>
+<%- include('../layout_header') %>
+
+
+<input type="text" id="name" placeholder="名称" />
+<input type="text" id="password" placeholder="密码" />
+<a href="javascript:" id="submit">确定</a>
+
+<%- include('../layout_scripts') %>
+
+<script type="text/javascript">
+	$('#submit').on('click',function(){
+		var name = $('#name').val();
+		var password = $('#password').val();
+		console.log(name,password)
+		$.ajax('/login',{
+			type:'POST',
+			dataType:'json',
+			data:{
+				name:name,
+				password:password
+			},
+			success:function(data){
+				console.log(data);
+			}
+		})
+	});
+</script>
+<%- include('../layout_footer') %>
