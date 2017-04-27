@@ -14,7 +14,6 @@ var userSchema = new mongoose.Schema({
 	}
 });
 
-
 userSchema.pre('save', function(next) {
 	var user = this
 	this.password = until.getSha1(this.password);

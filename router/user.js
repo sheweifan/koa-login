@@ -8,7 +8,7 @@ module.exports = (Router)=>{
 
 	Router.get('/islogined',function *(){
 
-		if(this.session.user && this.session.user.verify){
+		if(this.session.user && this.session.user.compare){
 			this.body = this.session.user;
 		}else{
 			this.body = false;
@@ -19,20 +19,20 @@ module.exports = (Router)=>{
 	Router.post('/login',function *(next){
 		var req = this.request.body;
 
-		var f_user = yield User.getOne({username:req.name});
-		var ismatch = until.comparePassword(req.password,f_user[0].password);
+		var f_user = yield User.getOne({username:req.name,password:until.getSha1(req.password)});
+		// var ismatch = until.comparePassword(req.password,f_user[0].password);
 		// console.log(111,);
-		// console.log(password)
-		if(ismatch){
+		// console.log(f_user)
+		if(f_user){
 			var obj = {
-				verify:true,
+				compare:true,
 				name:req.name
 			}
 			this.session.user = obj
 			this.body= obj
 		}else{
 			this.body={
-				verify:false
+				compare:false
 			}
 		}
 	});
@@ -74,7 +74,7 @@ module.exports = (Router)=>{
 		if(save){
 			//自动登陆
 			this.session.user = {
-				verify:true,
+				compare:true,
 				name:_user.username
 			}
 			this.body= {

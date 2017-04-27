@@ -49,7 +49,7 @@
 			},
 			success:function(data){
 				// console.log(data);
-				if(data.verify){
+				if(data.compare){
 					$('#login').hide();
 					$('#logined').show().find('#username').html(data.name)
 				}else{
@@ -94,7 +94,7 @@
 						alert('存储失败，请稍后重试')
 					}
 				}
-				// if(data.verify){
+				// if(data.compare){
 				// 	$('#login').hide();
 				// 	$('#logined').show().find('.username').html(data.name)
 				// }else{
