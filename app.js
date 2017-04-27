@@ -12,7 +12,7 @@ var moment = require('moment');
 var Promise = require('bluebird');
 
 
-var mongoUrl = 'mongodb://localhost/imooc';
+var mongoUrl = 'mongodb://localhost/test';
 mongoose.Promise = Promise;
 mongoose.connect(mongoUrl);
 mongoose.connection.on('error',console.error.bind(console,'连接错误:'));
@@ -22,7 +22,7 @@ mongoose.connection.on('error',console.error.bind(console,'连接错误:'));
 // });
 
 var app = new Koa();
-app.keys = ['imooc']
+app.keys = ['test']
 app.use(session(app))
 app.use(bodyParser());
 

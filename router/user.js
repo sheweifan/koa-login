@@ -23,7 +23,7 @@ module.exports = (Router)=>{
 		// var ismatch = until.comparePassword(req.password,f_user[0].password);
 		// console.log(111,);
 		// console.log(f_user)
-		if(f_user){
+		if(f_user.length === 1){
 			var obj = {
 				compare:true,
 				name:req.name
