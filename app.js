@@ -48,6 +48,7 @@ Router.get('/test',function *(next) {
 
 
 require('./router/user')(Router);
+require('./router/list')(Router);
 
 app.use(Router.routes());
 

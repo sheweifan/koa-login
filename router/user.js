@@ -1,10 +1,9 @@
 
 var User = require('../db/user');
-User.get().then(data=>{console.log(data)})
+// console.log(User.update);
+// User.get().then(data=>{console.log(data)})
 var until = require('../until');
 module.exports = (Router)=>{
-
-	
 
 	Router.get('/islogined',function *(){
 
@@ -90,4 +89,22 @@ module.exports = (Router)=>{
 		}
 
 	});
+
+	Router.post('/update',function *(next){
+		var req = this.request.body;
+		var username = this.session.user.name;
+		// console.log(0,req)
+		// var data = yield User.getOne();
+		// console.log(1,data)
+		var data = yield User.update({username:username},{$set:{password:until.getSha1(req.password)} })
+		// console.log(2,data)
+		// data = yield User.getOne({username:username});
+		// console.log(3,data)
+		// data = yield User.getOne({_id:data[0]._id});
+		// console.log(4,data)
+		this.body = true;
+	});
+
+
+
 }

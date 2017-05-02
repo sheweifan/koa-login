@@ -34,6 +34,10 @@ userSchema.statics = {
 	getOne:function(fillter){
 		return this.find(fillter)
 	}
+	// ,
+	// update:function(newValue,oldValue){
+	// 	return this.update(newValue,oldValue)
+	// }
 };
 
 var userModel = mongoose.model('user',userSchema);
