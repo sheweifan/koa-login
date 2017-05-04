@@ -23,7 +23,7 @@ mongoose.connection.on('error',console.error.bind(console,'连接错误:'));
 
 var app = new Koa();
 app.keys = ['test']
-app.use(session(app))
+app.use(session({maxAge:2*60*1000},app))
 app.use(bodyParser());
 
 
@@ -36,6 +36,7 @@ app.use(views(__dirname + '/app/views', {
 }))
 
 Router.get('/',function *(next) {
+  console.log(this.session)
     yield this.render('pages/index', {
       title: '首页'
     })
