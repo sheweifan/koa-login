@@ -1,0 +1,244 @@
+[
+    {
+        "id": 1,
+        "name": "南京",
+        "ab": "nj",
+        "leval": 1
+    },
+    {
+        "id": 2,
+        "name": "武汉",
+        "ab": "wh",
+        "leval": 1
+    },
+    {
+        "id": 3,
+        "name": "无锡",
+        "ab": "wx",
+        "leval": 1
+    },
+    {
+        "id": 1,
+        "name": "鼓楼区",
+        "ab": "glq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 2,
+        "name": "玄武区",
+        "ab": "xwq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 3,
+        "name": "秦淮区",
+        "ab": "qhq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 4,
+        "name": "建邺区",
+        "ab": "jyq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 5,
+        "name": "雨花台区",
+        "ab": "yhtq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 6,
+        "name": "栖霞区",
+        "ab": "qxq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 7,
+        "name": "江宁区",
+        "ab": "jnq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 8,
+        "name": "浦口区",
+        "ab": "pkq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 9,
+        "name": "六合区",
+        "ab": "lhq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 10,
+        "name": "溧水区",
+        "ab": "lsq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 11,
+        "name": "高淳区",
+        "ab": "gcq",
+        "cityId": 1,
+        "leval": 2
+    },
+    {
+        "id": 12,
+        "name": "江岸区",
+        "ab": "jaq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 13,
+        "name": "江汉区",
+        "ab": "jhq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 14,
+        "name": "汉阳区",
+        "ab": "hyq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 15,
+        "name": "武昌区",
+        "ab": "wcq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 16,
+        "name": "青山区",
+        "ab": "qsq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 17,
+        "name": "洪山区",
+        "ab": "hsq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 18,
+        "name": "东西湖区",
+        "ab": "dxhq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 19,
+        "name": "汉南区",
+        "ab": "hnq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 20,
+        "name": "蔡甸区",
+        "ab": "cdq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 21,
+        "name": "江夏区",
+        "ab": "jxq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 22,
+        "name": "黄陂区",
+        "ab": "hpq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 23,
+        "name": "新洲区",
+        "ab": "xzq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 29,
+        "name": "硚口区",
+        "ab": "qkq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 30,
+        "name": "沌口区",
+        "ab": "dkq",
+        "cityId": 2,
+        "leval": 2
+    },
+    {
+        "id": 24,
+        "name": "锡山区",
+        "ab": "xsq",
+        "cityId": 3,
+        "leval": 2
+    },
+    {
+        "id": 25,
+        "name": "惠山区",
+        "ab": "hsq",
+        "cityId": 3,
+        "leval": 2
+    },
+    {
+        "id": 26,
+        "name": "滨湖区",
+        "ab": "bhq",
+        "cityId": 3,
+        "leval": 2
+    },
+    {
+        "id": 27,
+        "name": "梁溪区",
+        "ab": "lxq",
+        "cityId": 3,
+        "leval": 2
+    },
+    {
+        "id": 28,
+        "name": "新吴区",
+        "ab": "xwq",
+        "cityId": 3,
+        "leval": 2
+    },
+    {
+        "id": 36,
+        "name": "南长区",
+        "ab": "nzq",
+        "cityId": 3,
+        "leval": 2
+    },
+    {
+        "id": 37,
+        "name": "崇安区",
+        "ab": "caq",
+        "cityId": 3,
+        "leval": 2
+    }
+]

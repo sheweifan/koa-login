@@ -1,0 +1,2389 @@
+[
+    {
+        "buildId": 93,
+        "cityId": 1,
+        "areaId": 10,
+        "styleId": 1,
+        "desc": null,
+        "title": "世纪天城",
+        "id": 295,
+        "images": [
+            "map/f273a8f0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f29d29f0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f31937c0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f3b4b470-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f46d2f00-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f4ed0d60-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f581ac40-dfaa-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "220",
+        "upload": true
+    },
+    {
+        "buildId": 94,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 6,
+        "desc": null,
+        "title": "高淳大湖美景",
+        "id": 296,
+        "images": [
+            "map/f5fa37a0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f696c5c0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f7090f90-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f7a8d200-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f8462370-dfaa-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "340",
+        "upload": true
+    },
+    {
+        "buildId": 98,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 1,
+        "desc": null,
+        "title": "保利紫晶",
+        "id": 301,
+        "images": [
+            "map/f8ee4a50-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f940d720-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f977ecb0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f99c64a0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/f9c12ab0-dfaa-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "170",
+        "upload": true
+    },
+    {
+        "buildId": 137,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 6,
+        "desc": null,
+        "title": "雅居乐长乐渡",
+        "id": 291,
+        "images": [
+            "map/f9e0e7b0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/fafb0a40-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/fc2b4ce0-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/fd13ff30-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/fe3e2750-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/ff59a970-dfaa-11e7-a390-6585f9fdf799.jpg",
+            "map/008ea700-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0170c9a0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "440",
+        "upload": true
+    },
+    {
+        "buildId": 82,
+        "cityId": 1,
+        "areaId": 2,
+        "styleId": 6,
+        "desc": null,
+        "title": "美林墅",
+        "id": 293,
+        "images": [
+            "map/02904360-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/03d8a1e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/05efe920-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0854b420-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0a9fb590-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "690",
+        "upload": true
+    },
+    {
+        "buildId": 122,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 3,
+        "desc": "项目地址：雅居乐\n项目面积：160㎡\n设计风格：小美风格\n设计说明：本方案为小美风，沙发背景墙采用浅色硬包装饰，主卧床头背景采用深色护墙板进行装饰，次卧采用大面积的白色橱柜，整体以白色为主，墙体与顶面用粉色乳胶漆进行分割，带动了整体的灵活性。整个空间以欧洲文化为根基，又融合美洲大陆自由不羁的文化元素以及其它多种风格元素，没有太多的造作的装饰与约束，不经意中也成就了一种休闲式的浪漫。",
+        "title": "美式 160㎡ 雅居乐",
+        "id": 356,
+        "images": [
+            "map/0ce7a9c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0d66c4d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0da5a290-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "160",
+        "upload": true
+    },
+    {
+        "buildId": 149,
+        "cityId": 1,
+        "areaId": 8,
+        "styleId": 7,
+        "desc": "十八匠-橡树城现代简约风格设计案例",
+        "title": "十八匠-橡树城现代简约风格设计案例",
+        "id": 416,
+        "images": [
+            "map/0e01f360-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0e6b8aa0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0eb787c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0f131540-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/0f7fe0d0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "127",
+        "upload": true
+    },
+    {
+        "buildId": 137,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 4,
+        "desc": "十八匠-雅居乐混搭风格装修案例",
+        "title": "十八匠-雅居乐混搭风格装修案例",
+        "id": 415,
+        "images": [
+            "map/0fb03fa0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1018c570-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1087b3e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/10ef2840-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "149",
+        "upload": true
+    },
+    {
+        "buildId": 131,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 1,
+        "desc": "时代上城",
+        "title": "时代上城",
+        "id": 414,
+        "images": [
+            "map/115c1ae0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/118351f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/11cc1ac0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "380",
+        "upload": true
+    },
+    {
+        "buildId": 127,
+        "cityId": 1,
+        "areaId": 3,
+        "styleId": 1,
+        "desc": "观山名筑",
+        "title": "观山名筑",
+        "id": 413,
+        "images": [
+            "map/123c1aa0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1287a290-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/12d99320-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "360",
+        "upload": true
+    },
+    {
+        "buildId": 150,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 3,
+        "desc": "0",
+        "title": "十八匠-朗诗太湖郡美式装修案例",
+        "id": 412,
+        "images": [
+            "map/13326180-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/13586010-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/137732b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/139ae750-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "117",
+        "upload": true
+    },
+    {
+        "buildId": 97,
+        "cityId": 1,
+        "areaId": 5,
+        "styleId": 7,
+        "desc": "长发诸公",
+        "title": "长发诸公",
+        "id": 411,
+        "images": [
+            "map/13b489d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/14176a50-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/149c78d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/150b8e50-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/155ede70-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/15bed8c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/162dee40-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "162",
+        "upload": true
+    },
+    {
+        "buildId": 83,
+        "cityId": 1,
+        "areaId": 2,
+        "styleId": 6,
+        "desc": "骋望云邸",
+        "title": "骋望云邸",
+        "id": 409,
+        "images": [
+            "map/16866e80-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/16e382a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/173d3b60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/179c9970-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/17f05ec0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "240",
+        "upload": true
+    },
+    {
+        "buildId": 149,
+        "cityId": 1,
+        "areaId": 8,
+        "styleId": 7,
+        "desc": "0",
+        "title": "十八匠-橡树城现代混搭风格案例",
+        "id": 408,
+        "images": [
+            "map/1843d5f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/19715970-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1ac3a300-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1c172510-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1c86afc0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "132",
+        "upload": true
+    },
+    {
+        "buildId": 148,
+        "cityId": 1,
+        "areaId": 8,
+        "styleId": 7,
+        "desc": "十八匠-融侨观邸北欧风格装修案例",
+        "title": "十八匠-融侨观邸北欧风格装修案例",
+        "id": 407,
+        "images": [
+            "map/1d07c6a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1e29ff80-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/1f80dcf0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/207eec00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/21c575c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/22e42c30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/23b4e9b0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "213",
+        "upload": true
+    },
+    {
+        "buildId": 144,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 7,
+        "desc": "威尼斯水城",
+        "title": "威尼斯水城",
+        "id": 405,
+        "images": [
+            "map/24881830-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/24e30970-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/25537e80-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/25c55320-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/26996c00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/26dd79e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/27255850-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2766ce20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/27baba80-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "140",
+        "upload": true
+    },
+    {
+        "buildId": 83,
+        "cityId": 1,
+        "areaId": 2,
+        "styleId": 6,
+        "desc": "骋望云邸",
+        "title": "骋望云邸",
+        "id": 404,
+        "images": [
+            "map/282cb630-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/288cb080-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/28ea12c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/296f9670-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/29f7b230-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2a519200-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2aaafca0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2b1aae60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2b7c2f50-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "360",
+        "upload": true
+    },
+    {
+        "buildId": 94,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 3,
+        "desc": "高淳大湖美景",
+        "title": "高淳大湖美景",
+        "id": 403,
+        "images": [
+            "map/2c12ca00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2c8ba380-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2d2f3680-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2d8f57e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2e2be600-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "130",
+        "upload": true
+    },
+    {
+        "buildId": 147,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 7,
+        "desc": "十八匠-九龙湖别墅250.8㎡现代风格装修案例",
+        "title": "十八匠-九龙湖别墅250.8㎡现代风格装修案例",
+        "id": 402,
+        "images": [
+            "map/2ea311d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2ec19650-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2ee12c40-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "250.8",
+        "upload": true
+    },
+    {
+        "buildId": 146,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 6,
+        "desc": "十八匠-帝景天誉南区260㎡新中式风格案例",
+        "title": "十八匠-帝景天誉南区260㎡新中式风格案例",
+        "id": 400,
+        "images": [
+            "map/2efeed70-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2f5598f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/2fb0b140-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/301825a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/306bc3e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/30d92bb0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3130e8a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/318941d0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "260",
+        "upload": true
+    },
+    {
+        "buildId": 130,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 7,
+        "desc": "融科玖玖城",
+        "title": "融科玖玖城",
+        "id": 398,
+        "images": [
+            "map/320d8d00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3282bd00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/32f4b8b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/336aac00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/33c241e0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "154",
+        "upload": true
+    },
+    {
+        "buildId": 145,
+        "cityId": 1,
+        "areaId": 2,
+        "styleId": 6,
+        "desc": "十八匠-万象九里380㎡ 新中式风格装修案例",
+        "title": "十八匠-万象九里380㎡ 新中式风格装修案例",
+        "id": 397,
+        "images": [
+            "map/340d0680-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/342ac7b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3445f0d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/34622b60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/34b5a290-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/34d53880-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/34f73f70-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "380",
+        "upload": true
+    },
+    {
+        "buildId": 144,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 7,
+        "desc": "十八匠-威尼斯水城127㎡现代风格案例",
+        "title": "十八匠-威尼斯水城127㎡现代风格案例",
+        "id": 391,
+        "images": [
+            "map/3513ef30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3541dd00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/356d32c0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "127",
+        "upload": true
+    },
+    {
+        "buildId": 142,
+        "cityId": 1,
+        "areaId": 5,
+        "styleId": 6,
+        "desc": "十八匠-蠡湖公馆360㎡新中式风格设计案例",
+        "title": "十八匠-蠡湖公馆360㎡新中式风格设计案例",
+        "id": 388,
+        "images": [
+            "map/35e12a40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/35f8d0f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3613d300-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/362b0480-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/36462da0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/367fdb40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/36990890-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/36f72e20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/37219980-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/37428f00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/37686680-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/378675d0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "360",
+        "upload": true
+    },
+    {
+        "buildId": 121,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 1,
+        "desc": "金桂尚苑",
+        "title": "金桂尚苑",
+        "id": 387,
+        "images": [
+            "map/37a1ed10-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3821f280-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/38a3ccb0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/392fe010-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "324",
+        "upload": true
+    },
+    {
+        "buildId": 107,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 7,
+        "desc": "高科荣境",
+        "title": "高科荣境",
+        "id": 386,
+        "images": [
+            "map/3996b830-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3a16bda0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3aa011e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3b078640-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3b8ce2e0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "160",
+        "upload": true
+    },
+    {
+        "buildId": 137,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 6,
+        "desc": "雅居乐中央府",
+        "title": "雅居乐中央府",
+        "id": 385,
+        "images": [
+            "map/3bf4f380-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3c4843a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3ca530b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3d325580-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3da4ed70-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "260",
+        "upload": true
+    },
+    {
+        "buildId": 141,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 13,
+        "desc": "十八匠-江阴和院800㎡简欧风格设计案例",
+        "title": "十八匠-江阴和院800㎡简欧风格设计案例",
+        "id": 384,
+        "images": [
+            "map/3e12ca70-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3e6ecd20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3f1b60d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/3fd40270-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/402026a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/40776e60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/40d17540-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/413e19c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/41b8ef10-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/421bcf90-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/42b9e450-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "800",
+        "upload": true
+    },
+    {
+        "buildId": 104,
+        "cityId": 1,
+        "areaId": 3,
+        "styleId": 7,
+        "desc": "世茂君望墅",
+        "title": "世茂君望墅",
+        "id": 382,
+        "images": [
+            "map/43141240-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/437ac350-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4408f990-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/445e6c90-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/44d4fc20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/45454a20-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "330",
+        "upload": true
+    },
+    {
+        "buildId": 82,
+        "cityId": 1,
+        "areaId": 2,
+        "styleId": 6,
+        "desc": "美林墅",
+        "title": "美林墅",
+        "id": 381,
+        "images": [
+            "map/459ba780-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/46638b60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/46f432a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4749a5a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/47cd5490-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/482845d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/48c485d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/49630fc0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "650",
+        "upload": true
+    },
+    {
+        "buildId": 98,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 7,
+        "desc": "保利紫晶",
+        "title": "保利紫晶",
+        "id": 380,
+        "images": [
+            "map/49fb3110-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4b2706e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4b72dcf0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4c9fc430-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4d087110-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4e38b3b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4e880c30-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "360",
+        "upload": true
+    },
+    {
+        "buildId": 140,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 6,
+        "desc": "十八匠-中建城中墅220㎡ 新中式装修案例",
+        "title": "十八匠-中建城中墅220㎡ 新中式装修案例",
+        "id": 379,
+        "images": [
+            "map/4f947320-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4faf4e20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/4fca5030-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/500906e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/502652e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/50568aa0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "220",
+        "upload": true
+    },
+    {
+        "buildId": 138,
+        "cityId": 1,
+        "areaId": 5,
+        "styleId": 13,
+        "desc": "十八匠-银河湾490㎡ 新装饰主义设计案例",
+        "title": "十八匠-银河湾490㎡ 新装饰主义设计案例",
+        "id": 377,
+        "images": [
+            "map/5073fdb0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/50a39930-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/50fcb5b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/513c7dd0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/51720cc0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/51ced2c0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "490",
+        "upload": true
+    },
+    {
+        "buildId": 137,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 3,
+        "desc": "十八匠-雅居乐160㎡ 简约美式设计案例",
+        "title": "十八匠-雅居乐160㎡ 简约美式设计案例",
+        "id": 376,
+        "images": [
+            "map/51eeb6d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5257b1d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/52b4ed00-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "160",
+        "upload": true
+    },
+    {
+        "buildId": 136,
+        "cityId": 1,
+        "areaId": 8,
+        "styleId": 3,
+        "desc": "0",
+        "title": "十八匠-西上海华府天地446㎡美式",
+        "id": 375,
+        "images": [
+            "map/53175850-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/535a2db0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5375a4f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/53964c50-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/53ae4120-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "446",
+        "upload": true
+    },
+    {
+        "buildId": 97,
+        "cityId": 1,
+        "areaId": 5,
+        "styleId": 7,
+        "desc": "长发诸公",
+        "title": "长发诸公",
+        "id": 374,
+        "images": [
+            "map/53ccecb0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/542741b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/548dcbb0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/54db0150-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5517e340-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "260",
+        "upload": true
+    },
+    {
+        "buildId": 83,
+        "cityId": 1,
+        "areaId": 2,
+        "styleId": 3,
+        "desc": "骋望云邸",
+        "title": "骋望云邸",
+        "id": 372,
+        "images": [
+            "map/556fc740-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/56037bc0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/568c5ad0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/572b0bd0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "280",
+        "upload": true
+    },
+    {
+        "buildId": 135,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 7,
+        "desc": "万科新酩悦 230 ㎡ 现代主义",
+        "title": "十八匠-万科新酩悦 230㎡ 现代主义",
+        "id": 371,
+        "images": [
+            "map/57a089f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/57e55b20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5864eb60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/589daea0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5912b790-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "230",
+        "upload": true
+    },
+    {
+        "buildId": 84,
+        "cityId": 1,
+        "areaId": 3,
+        "styleId": 5,
+        "desc": "金陵雅颂居",
+        "title": "金陵雅颂居",
+        "id": 370,
+        "images": [
+            "map/594d0170-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/59eac810-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5a188ed0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5a76db70-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5acbd940-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5b312ac0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5baaeea0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "180",
+        "upload": true
+    },
+    {
+        "buildId": 133,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 5,
+        "desc": "本案为新古典风格，业主为夫妻二人，且不常住，所以就把主卧改成了一个套房式的，在设计上多以壁纸和护墙来做墙面装饰，局部以角花作为突破点，将是本案的主旨所在。设计师将典型的现代理性主义与古典浪漫主义结合，在满足功能要求的前提下，采用了“完美空间”设计理念。空间中很多造型都运用了曲线，自由灵活、连续富有舒适感，这是引人入胜之处，可以将人带入遐想的境界，哪怕只有视觉或心灵上的一瞬间触动。",
+        "title": "金科世界城",
+        "id": 367,
+        "images": [
+            "map/5be1b610-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5c751c70-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5cf76bd0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5d6d5f20-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "150",
+        "upload": true
+    },
+    {
+        "buildId": 132,
+        "cityId": 1,
+        "areaId": 8,
+        "styleId": 1,
+        "desc": "本套方案为简欧风格。业主是一家三口，喜欢简约，干净。所以造型都不是太复杂，在设计上多以壁纸来做墙面装饰，石材和硬包适量点缀，顶面局部以雕花作为突破点将是本案的主旨所在。设计师将简约与欧式结合，轻装修重装饰，在家具选材上也以白色，素色为主，多选舒适，柔性，温馨的材质组合，有效的建立起了温情暖意的家庭风格。在满足功能要求的前提下，采用了简约不简单的设计理念。",
+        "title": "戛纳小镇",
+        "id": 366,
+        "images": [
+            "map/5dd03fa0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5e602390-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5ee66a90-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/5f651070-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "180",
+        "upload": true
+    },
+    {
+        "buildId": 131,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 7,
+        "desc": "时代上城 现代风格设计案例",
+        "title": "十八匠-时代上城 现代风格设计案例",
+        "id": 365,
+        "images": [
+            "map/5ff20e30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/60185ae0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/603cd2d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/605bcc80-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6083edf0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "180",
+        "upload": true
+    },
+    {
+        "buildId": 129,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 6,
+        "desc": "万科魅力之城-新中式设计案例",
+        "title": "万科魅力之城-新中式",
+        "id": 363,
+        "images": [
+            "map/60a27270-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/60c367f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/60dff0a0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "145",
+        "upload": true
+    },
+    {
+        "buildId": 128,
+        "cityId": 1,
+        "areaId": 5,
+        "styleId": 7,
+        "desc": "整体以现代简约风格为主设计",
+        "title": "太湖国际-现代简约风格案例",
+        "id": 362,
+        "images": [
+            "map/60fc2b30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/614716e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6193fe60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/61f46de0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "166",
+        "upload": true
+    },
+    {
+        "buildId": 126,
+        "cityId": 1,
+        "areaId": 3,
+        "styleId": 7,
+        "desc": ".",
+        "title": "宝能城-现代简约装修案例",
+        "id": 360,
+        "images": [
+            "map/624a5610-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6271db40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/62afa790-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/62de31a0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "141",
+        "upload": true
+    },
+    {
+        "buildId": 120,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 3,
+        "desc": "本案是美式风格，美式风格在室内环境中力求表现悠闲，舒畅的生活情趣，所以在室内环境中也常运用天然木等材质质朴的纹理。在本案中，实木的纹理,清新的布艺沙发,无不流露出一股浓浓的美洲风情。在公共空间的设计上，扩大客厅的原有空间，使得客厅开敞大气。餐厅设计更具人性化，中西厨相互结合。该方案的娱乐空间齐全，满足业主的休闲，娱乐，及会友。在选材上也多选舒适，柔性，温馨的材质组合，有效的建立起了温情暖意的家庭风格。",
+        "title": "华府庄园",
+        "id": 359,
+        "images": [
+            "map/6314aaf0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/63a48ee0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6444c680-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/64c82750-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/654100d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/65bcc080-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/664c2f40-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "680",
+        "upload": true
+    },
+    {
+        "buildId": 124,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 7,
+        "desc": "本案是现代简约风格，整套房子无论从装饰还是选材都以规则的几何形为主，但是简约不等于简单，它是经过深思熟虑后经过创新得出的设计和思路的延展，不是简单的“堆砌”和平淡的“摆放”。本案把厨房和餐厅规划在一个空间，还增加了一个吧台的设计，有效的利用了空间，还解决了就餐人数过多，餐桌不够带来的问题。一些不规则的摆件和盆景打破了整个环境四四方方的感觉，带来了些许活力，增强了家庭环境的温馨度。",
+        "title": "蓝天嘉园",
+        "id": 358,
+        "images": [
+            "map/66f3b9e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6735f300-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/67854b80-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/67d8c2b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/68303180-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/687fb110-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/68d79510-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6940b720-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/699dcb40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/69f2c910-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "260",
+        "upload": true
+    },
+    {
+        "buildId": 123,
+        "cityId": 1,
+        "areaId": 4,
+        "styleId": 6,
+        "desc": "本套方案为新中式风格。又融合了现代简约的几何图案及线条的设计风格，通过对中国古典园林设计思想的理解并提炼，在室内色彩方面，本案以暗红、长城灰、玉脂白、和木原色来打造新中式的气氛。除了保留中式的韵味外，还加了大理石、玻璃、灯带等现代材料，使空间又包含了现代生活气息；在家具搭配上主要取材与自然，以木材为主，在玄关处又用镂空花雕做装饰，突出了本案的设计理念。新中式的设计流露出清雅的格调，彰显高雅品位。",
+        "title": "奥林匹克花园",
+        "id": 357,
+        "images": [
+            "map/6a3cca60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6afc97f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6b9814a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6c231690-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6cb7dc80-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6d248100-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "380 ",
+        "upload": true
+    },
+    {
+        "buildId": 92,
+        "cityId": 1,
+        "areaId": 8,
+        "styleId": 7,
+        "desc": null,
+        "title": "明发滨江新城",
+        "id": 294,
+        "images": [
+            "map/6d912580-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/6eb58140-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/70d94ba0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/71fd3230-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "130",
+        "upload": true
+    },
+    {
+        "buildId": 140,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 1,
+        "desc": "中建城中墅",
+        "title": "十八匠-中建城中墅美式风格设计案例",
+        "id": 417,
+        "images": [
+            "map/74203940-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7589b450-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/771e8520-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/78613e50-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "336",
+        "upload": true
+    },
+    {
+        "buildId": 128,
+        "cityId": 1,
+        "areaId": 5,
+        "styleId": 7,
+        "desc": "十八匠-太湖国际凯旋门140㎡现代设计案例",
+        "title": "十八匠-太湖国际140㎡现代设计案例",
+        "id": 369,
+        "images": [
+            "map/79c53b20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7a168f70-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7a706f40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7ac768e0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "140",
+        "upload": true
+    },
+    {
+        "buildId": 130,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 3,
+        "desc": "十八匠-融科玖玖城 美式设计案例",
+        "title": "十八匠-融科玖玖城 美式设计案例",
+        "id": 364,
+        "images": [
+            "map/7b2910e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7b4e2510-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7b690010-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7ba23880-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7bc4b4a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7be730c0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "251",
+        "upload": true
+    },
+    {
+        "buildId": 127,
+        "cityId": 1,
+        "areaId": 3,
+        "styleId": 7,
+        "desc": "现代风格设计",
+        "title": "观山名筑-现代风格设计案例",
+        "id": 361,
+        "images": [
+            "map/7c02cf10-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7c2d1360-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7c54bfa0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7c6e6220-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "275",
+        "upload": true
+    },
+    {
+        "buildId": 121,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 7,
+        "desc": "金桂尚苑，面积：176\n设计师：朱勇\n\n本方案为现代美式风格，居室色彩主调为白色。\n家具为古典弯腿式，各种花饰、丰富的木线变化、是西式传统室内装饰的衍生和发展，华美、富丽、富有浪漫气氛的空间环境。\n整体设计为现代风格，脱离喧嚣、抛弃繁复的装饰线条，回归本真的简约之美，大理石、木纹、素色的软装搭配，放下包袱感受生活。",
+        "title": "金桂尚苑-现代美式装修设计案例",
+        "id": 355,
+        "images": [
+            "map/7c8a75a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7cd78430-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "176",
+        "upload": true
+    },
+    {
+        "buildId": 120,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 3,
+        "desc": "123",
+        "title": "华府庄园350㎡ 美式装修案例",
+        "id": 354,
+        "images": [
+            "map/7d152970-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "350",
+        "upload": true
+    },
+    {
+        "buildId": 109,
+        "cityId": 1,
+        "areaId": 2,
+        "styleId": 4,
+        "desc": null,
+        "title": "文化名园",
+        "id": 317,
+        "images": [
+            "map/7d30c7c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7e5f5cb0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/7f552e60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/80684c10-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "180",
+        "upload": true
+    },
+    {
+        "buildId": 101,
+        "cityId": 1,
+        "areaId": 4,
+        "styleId": 9,
+        "desc": null,
+        "title": "苏宁滨江一号",
+        "id": 305,
+        "images": [
+            "map/81696860-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/818f66f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/81b20a20-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "260",
+        "upload": true
+    },
+    {
+        "buildId": 100,
+        "cityId": 1,
+        "areaId": 3,
+        "styleId": 7,
+        "desc": null,
+        "title": "京门府",
+        "id": 304,
+        "images": [
+            "map/81de2330-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/81fe5560-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/821c64b0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "175",
+        "upload": true
+    },
+    {
+        "buildId": 99,
+        "cityId": 1,
+        "areaId": 7,
+        "styleId": 1,
+        "desc": null,
+        "title": "景枫法兰谷",
+        "id": 303,
+        "images": [
+            "map/82432690-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/826cf5b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/828efca0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "260",
+        "upload": true
+    },
+    {
+        "buildId": 98,
+        "cityId": 1,
+        "areaId": 6,
+        "styleId": 4,
+        "desc": null,
+        "title": "保利紫晶",
+        "id": 302,
+        "images": [
+            "map/82b9dd30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/830453b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/832c9c30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/83509ef0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/83742c80-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "170",
+        "upload": true
+    },
+    {
+        "buildId": 97,
+        "cityId": 1,
+        "areaId": 5,
+        "styleId": 6,
+        "desc": null,
+        "title": "长发诸公",
+        "id": 300,
+        "images": [
+            "map/839919a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/83c818e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/83ec42b0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "220",
+        "upload": true
+    },
+    {
+        "buildId": 95,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 6,
+        "desc": null,
+        "title": "私人会所",
+        "id": 299,
+        "images": [
+            "map/8404d3c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/842442a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/8468c5b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/848af3b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/84b6bea0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/84df5540-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "800",
+        "upload": true
+    },
+    {
+        "buildId": 96,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 9,
+        "desc": null,
+        "title": "三亚样板房",
+        "id": 298,
+        "images": [
+            "map/85233c10-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/853bf430-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/85521440-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "180",
+        "upload": true
+    },
+    {
+        "buildId": 96,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 9,
+        "desc": null,
+        "title": "三亚样板房",
+        "id": 297,
+        "images": [
+            "map/85718320-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/858f4450-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/85ae3e00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/85ca7890-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "180",
+        "upload": true
+    },
+    {
+        "buildId": 89,
+        "cityId": 1,
+        "areaId": 1,
+        "styleId": 3,
+        "desc": null,
+        "title": "复地新都国际花园",
+        "id": 290,
+        "images": [
+            "map/860c6390-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/86f7fc10-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/886e6f70-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/8b012840-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/8bd39370-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/8cb93880-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/8d8f2620-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/8e885330-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/8faf1ff0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "240",
+        "upload": true
+    },
+    {
+        "buildId": 32,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 7,
+        "desc": "黑与白是极简主义的代表色，而其它颜色只是衬托和背景，简单的直线条与黑与白无声交融，富含设计或哲学意味但不夸张，给人带来一种低调的宁静感，沉稳而内敛，含蓄而静谧。",
+        "title": "汤逊湖壹号",
+        "id": 244,
+        "images": [
+            "map/90a84d00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/91f7b060-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/934d0730-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/946e7cc0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "300",
+        "upload": true
+    },
+    {
+        "buildId": 37,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 2,
+        "desc": "本案法式风格，摒弃了庄严恢宏的气势，在浪漫优雅上做足文章。 设计师在优雅浪漫的主基调下又营造出移步换景的空间美感，强调建筑绘画与雕塑以及室内环境等的综合性，亦平衡贵气极致的感官冲击，绚丽相映的水晶光芒，凝聚偌大空间的情感，华丽却不落俗。镜面长廊，宛若水面波纹交错的柔性与动态，显出引人驻足的奢华布局手法，诠释了设计师对大宅精神的掌握力度。 蓝色的家居软装为白色的空间里酝酿出浪漫矜贵的格调，亦是这唯美的蓝，将浪漫与高雅的法式风格渲染到极致。",
+        "title": "驿山高尔夫",
+        "id": 256,
+        "images": [
+            "map/959151e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/95e676c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/966ce4d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9720f290-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/97ec58e0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "200",
+        "upload": true
+    },
+    {
+        "buildId": 67,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 5,
+        "desc": "新古典主义风格的主要特点是在注重装饰效果的同时，用现代的手法和材质还原古典气质，新古典主义具备了古典与现代的双重审美效果，完美的结合也让人们在享受物质文明的同时得到了精神上的慰藉。",
+        "title": "保利十二橡树庄园别墅",
+        "id": 241,
+        "images": [
+            "map/98fb09c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/99b35d40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9aa25120-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9b4065e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9c2128f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9d045d00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9de2d620-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9ed2b460-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9f428d30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/9ff00b40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a0e0d3e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a1bc8de0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a247ddf0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a3139260-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a3fcb9e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a4e5e160-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "340",
+        "upload": true
+    },
+    {
+        "buildId": 68,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 5,
+        "desc": "新古典主义风格是一种多元化的思考方式，将怀古的浪漫情怀与现代人对生活的需求相结合，兼容华贵典雅与时尚现代，反映出后工业时代个性化的美学观点和文化品位，是高雅、尊贵、理性的代名词。",
+        "title": "水蓝郡别墅",
+        "id": 243,
+        "images": [
+            "map/a5c87930-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a69abd50-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a781e900-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a868c690-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a9320a00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/a9d3ef50-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/aabec480-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/ab221a30-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/abe28400-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/ac777100-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/ad0977d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/adae4350-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/ae49e710-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/aeb04a00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/af74f990-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "390",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 2,
+        "desc": "本案为法式风格，典雅高贵但不俗套，雍容华贵但不繁琐，材质精挑细选，尽显主人的对生活追求的完美，施工精雕细琢表现出对细节的苛刻。",
+        "title": "华侨城",
+        "id": 226,
+        "images": [
+            "map/b07615e0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "220",
+        "upload": true
+    },
+    {
+        "buildId": 29,
+        "cityId": 2,
+        "areaId": 12,
+        "styleId": 1,
+        "desc": "梦湖香郡别墅",
+        "title": "梦湖香郡别墅",
+        "id": 352,
+        "images": [
+            "map/b21c72e0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b2c3d670-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b35ba9a0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b3e5c130-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b45fd330-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b4f2c460-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b569c920-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b5e5afe0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "900",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 5,
+        "desc": "本案涉及以新古典为主，整个空间弥漫着奢华与浪漫的气氛，硬朗的材质，明快的色彩、\n\n柔美的家具、雅致的配饰，赋予空间素净、明亮的神采。",
+        "title": "华侨城别墅设计",
+        "id": 348,
+        "images": [
+            "map/b6682650-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b70b9240-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b7a3daa0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b82602f0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b8bc2870-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b933c970-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/b9b72a40-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/ba344980-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/bab3d9c0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/bb3e1860-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/bbb60780-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/bc563f20-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/bcd6e0d0-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "360",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 6,
+        "desc": "设计说明：本案特点是总体布局对称均衡，端正稳健，而在装饰细节上精雕细琢，体现出中国传统美学精神，陈设包括水墨画， 盆景，瓷器，古玩，屏风，博古架等，追求修身养性的生活境界。 表达对清雅含蓄，端庄丰华的东方式精神境界的追求。",
+        "title": "华侨城",
+        "id": 259,
+        "images": [
+            "map/bd48b570-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/be6bd8b0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/c0076040-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/c1de6a30-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 36,
+        "cityId": 2,
+        "areaId": 14,
+        "styleId": 3,
+        "desc": "本案它摒弃了巴洛克和洛可可风格所追求的新奇和浮华，建立在一种对美式的新的认识基础上，强调简洁、明晰的线条和优雅、得体有度 的装饰。 美式风格的家具和家居用品的最迷人之处在于造型、纹路、雕饰和色调细腻高贵，耐人寻味处透露亘古而久远的芬芳。用色一般 以单一色为主，强调更强的实用性。",
+        "title": "月湖琴声",
+        "id": 258,
+        "images": [
+            "map/c38ba500-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/c3a40f00-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/c3c3f310-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/c3eb0310-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 36,
+        "cityId": 2,
+        "areaId": 14,
+        "styleId": 7,
+        "desc": "说明： 空间中的设定初衷，我们比拟一种新型态的几何造型的建筑语彙 大块地切割出白色极简色块，试图妆点出一种不同的几何前卫白色人文风格 所谓的客厅中的电视牆体，实际上以简约几何形体作为基础，思考建筑造型的结构方式，重新定义客厅空间与牆面之间的相互关系，形成一种趣味的调性混合。",
+        "title": "月湖琴声",
+        "id": 257,
+        "images": [
+            "map/c4060520-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/c75d1f60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/cb167de0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/cf31ab70-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 36,
+        "cityId": 2,
+        "areaId": 14,
+        "styleId": 4,
+        "desc": "客厅的电视背景与沙发背景，采用了爵士白石材与暖色墙纸做呼应，形成了颜色反差和材质的冷暖对比。空间上显得有层次，便在餐厅东墙面采用了大面积的黑镜，并与客厅顶面及墙面的黑镜形成了呼应。",
+        "title": "月湖琴声",
+        "id": 255,
+        "images": [
+            "map/d2ec6980-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/d48ea7d0-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/d9633a50-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/e42c9c60-dfab-11e7-a390-6585f9fdf799.jpg",
+            "map/ef80b240-dfab-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 36,
+        "cityId": 2,
+        "areaId": 14,
+        "styleId": 7,
+        "desc": "设计说明：本案皆在打造一个简约时尚的现代空间，硬装上没有做过多的装饰，一整面木饰面墙有效的隐藏了一个房间的房门，没有主灯的吊顶简单大气，进门玄关三块重墨的玻璃既起到玄关的作用又与整个色调完美契合",
+        "title": "月湖琴声",
+        "id": 254,
+        "images": [
+            "map/044a32f0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/123f5980-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/1dd31070-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/3178d1a0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/3d884840-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 5,
+        "desc": "设计说明： 新古典主义风潮重新定义了奢华大气的室内空间，成为了成功人士展现身份的象征，新古典风格从简单到繁杂、从整体到局部，精雕细琢，镶花刻金都给人一丝不苟的印象，象征了成功的不易；",
+        "title": "华侨城",
+        "id": 253,
+        "images": [
+            "map/48123050-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/49bcfa20-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 7,
+        "desc": "设计说明： 新中式和现代的混搭，运用高级灰为主旋律，有一丝低调奢华的气息，每个细节都流露出细腻贴心的人性化舒适感与尊贵感，给人以舒适的生活，愉悦的心情；",
+        "title": "华侨城",
+        "id": 252,
+        "images": [
+            "map/4b844ca0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/4bf6bd80-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/4c46d950-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/4cde3750-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 38,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 9,
+        "desc": "设计说明： 强烈的对比和精致的金属质感在述说后现代的刚劲有力，搭配突破传统的家具，摈弃繁琐的造型，描绘出解构主义的新思想，深受时尚人士喜爱；",
+        "title": "绿地名邸公馆",
+        "id": 251,
+        "images": [
+            "map/4d3298e0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/51026590-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 38,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 3,
+        "desc": "设计说明： 为表达自由，几经周折的最终选择了美式，选择了无拘无束的生活态度，亲近自然的木色家具点缀以成熟的草绿色，仿佛深处在宁静的大自然中，聆听天籁之音；",
+        "title": "绿地名邸公馆",
+        "id": 250,
+        "images": [
+            "map/5407b650-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/57154470-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 1,
+        "desc": "设计说明： 低调奢华有内涵，低调的装饰奢华的空间。在混搭风格刚刚席卷过的武汉，这是难得一见的纯粹，在此能够强烈地感受传统的历史痕迹与浑厚的文化底蕴，同时又摒弃了过于复杂的肌理和装饰，简化了线条；",
+        "title": "复地东湖国际",
+        "id": 249,
+        "images": [
+            "map/59249c70-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/59ed43a0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/5aad1130-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/5bb0c590-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/5c7a0900-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/5d44d310-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/5e106070-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "290",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 7,
+        "desc": "设计说明： 非常细心的业主，主动提供一些喜欢的元素，然后让设计师赋予到空间中，融合出主题鲜明的生活方式，空间结构进行过别具一格的改造，最终在空间属性微调的形式下把完全分隔的空间连贯起来，展现出更为灵动舒适的环境；",
+        "title": "复地东湖国际",
+        "id": 248,
+        "images": [
+            "map/5eccab90-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/618f4e00-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 9,
+        "desc": "设计说明： 自然洒脱，纯净雅致的北欧风格是小年轻们向往的生活方式，这对新婚不久的恩爱夫妻怀揣着对简单生活的向往，对大自然的热爱，他们在各种市场追寻散发着人文气息的家具和精致的装饰品来书写生活点滴；",
+        "title": "复地东湖国际",
+        "id": 247,
+        "images": [
+            "map/644f0a40-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/64a3b9f0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/64cb8d40-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/65011c30-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/6525e240-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/65413270-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 33,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 3,
+        "desc": "设计说明： 为营造度假式的休闲住宅，整体空间给人的感觉就一个字“慢”，让所有人在此环境中慢下来，沙发慵懒的感觉让人不想起身，餐椅的舒适感把客人留在餐厅高谈阔论，借用乐不思蜀来形容远离城市的愉悦；",
+        "title": "花山碧桂园",
+        "id": 246,
+        "images": [
+            "map/666d7d70-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/66932de0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/66dd7d50-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/67085de0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/67322d00-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/67562fc0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/67792110-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/6799a160-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 38,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 9,
+        "desc": "北欧的斯堪的纳维亚主义风格成为时下宠儿，正如密斯.凡.德罗的名言“Less is more”简约主义的中心思想，反映出现代都市人进入后现代社会后的另一种思考方向。",
+        "title": "绿地名邸公馆",
+        "id": 245,
+        "images": [
+            "map/67b3b910-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/68d4e080-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/69bd6bc0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/6b3e1850-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/6c53a700-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/6d8bb1d0-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 39,
+        "cityId": 2,
+        "areaId": 12,
+        "styleId": 9,
+        "desc": "新东方主义尊重传统和本土的文化艺术，但又有所创新更符合现代人的审美情趣，有广博而深沉的东方文明和文化基础，故而有着巨大的创作空间和相当强的生命力、影响力、渗透力。",
+        "title": "世纪江尚",
+        "id": 242,
+        "images": [
+            "map/6e807210-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/6fc1f2c0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/70eba5b0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/72565940-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/73939430-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "161",
+        "upload": true
+    },
+    {
+        "buildId": 65,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 3,
+        "desc": "小美式是现代美式风格的缩小版，其混搭功能彻底解除空间限制，既能满足有文化的生活方式，又能彰显业主个性化的追求，所以越来越多的年轻人选择小美式风格。",
+        "title": "百瑞景",
+        "id": 240,
+        "images": [
+            "map/73e97c60-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/756e2090-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/77ab3f50-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/79a1b820-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "150",
+        "upload": true
+    },
+    {
+        "buildId": 64,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 7,
+        "desc": "设计思路：用黑白对比表现空间感，墙面石材和乳胶漆的搭配使空间不至于太生硬，黑色皮质沙发及家 具体现出男主人的审美品位，古典纹样元素和饰品象征女主人特有的女性气质，在颜色和材 质的深浅、刚柔间营造出男女主人互相包容、和谐共处的居家氛围。",
+        "title": "万达御湖世家",
+        "id": 239,
+        "images": [
+            "map/7ac18000-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/7f6e6640-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/85220e20-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/8a7bfd40-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 31,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 3,
+        "desc": "明快轻松的硬装配合布艺加实木的软装组合 既有美式的经典又有现代的轻松 带给业主假期般的愉悦",
+        "title": "纳帕溪湖",
+        "id": 238,
+        "images": [
+            "map/9035bfa0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/93bf5b90-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/97178740-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9a493f30-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 29,
+        "cityId": 2,
+        "areaId": 12,
+        "styleId": 7,
+        "desc": "用明快的材质和颜色相结合 打造一个极具现代感而不失奢华的品味空间",
+        "title": "梦湖香郡",
+        "id": 237,
+        "images": [
+            "map/9ead3590-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9ed09c10-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9ef27bf0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9f2fd310-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9f481600-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9f6c66e0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9f8b87a0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9fa77410-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/9fce35f0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/a0297550-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/a0536b80-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/a073c4c0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/a0915ee0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/a0ba1c90-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 62,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 6,
+        "desc": "使用相对传统的中式表现手法展现出与业主年纪相仿的稳重以及传统之美",
+        "title": "光谷坐标城九台",
+        "id": 236,
+        "images": [
+            "map/a0f3ca30-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/a45c97b0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/a8995700-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/ad0bf360-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/b0bfac90-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 27,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 7,
+        "desc": "设计思路：会客区域选择大气的极具现代感和设计感的装饰手法，卧室区域选择相对柔和温馨的手法， 一刚一柔，对外体现出主人内敛但不俗套的高雅气质，对内则把家的温馨和对生活的热情 演绎到极致。",
+        "title": "恒大金碧天下",
+        "id": 235,
+        "images": [
+            "map/b3984800-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/b8af88d0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/c0708ce0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/c776cc70-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 22,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 3,
+        "desc": "用质朴的材质和颜色营造出美式传统乡村风格的随意性和生活性",
+        "title": "福星惠誉东湖城",
+        "id": 234,
+        "images": [
+            "map/cefcea60-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/d506efa0-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 21,
+        "cityId": 2,
+        "areaId": 29,
+        "styleId": 1,
+        "desc": "用欧式的元素体现出空间的华丽 在软装方面选择相对偏现代的欧式搭配使得空间不至于出现传统风 格的压抑沉闷",
+        "title": "越秀星汇云锦",
+        "id": 233,
+        "images": [
+            "map/d9ece740-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/de105230-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/e2cd16f0-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 21,
+        "cityId": 2,
+        "areaId": 29,
+        "styleId": 3,
+        "desc": "用现代元素和传统元素相结合 打造出一个轻松休闲不失品位的个性空间",
+        "title": "越秀星汇云锦",
+        "id": 232,
+        "images": [
+            "map/e74be850-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/f447bac0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/f93f65a0-dfac-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 5,
+        "desc": "法式新古典风格特点，经改良过的新古典主义，融合欧洲文化， 丰富的艺术底蕴，开放、创新的设计思想及样式，受大家喜爱与追捧。从 简单到繁杂、从整体到局部，精雕细琢，镶花刻金，新古典主义装修风格 都一丝不苟。一方面保留了材质、色彩的大致风格，另一方面摒弃过于复 杂的肌理和装饰，简化线条。在布局上突出轴线的对称，恢宏的气势，豪 华舒适的居住空间。",
+        "title": "复地东湖国际",
+        "id": 231,
+        "images": [
+            "map/ff024fc0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/ffc307b0-dfac-11e7-a390-6585f9fdf799.jpg",
+            "map/00d5b030-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/01c69fe0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 65,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 1,
+        "desc": "现代欧式风格设计从简到繁，从整体 到局部，精雕细琢。 一方面保留了材质色彩的大 致风格，同时又摒弃了过于复杂的肌理和 装饰， 简化了线条。现代欧式风格更像是一种多元化的 思考方式，将 怀古的浪漫情怀与现代人对生活的 需求相结合，兼容华贵典雅与时尚 现代，反应出 后工业时代个性化的美学观点和文化品味。",
+        "title": "百瑞景",
+        "id": 230,
+        "images": [
+            "map/02e68ed0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/043296d0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/057c7bf0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/08a05130-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/0d155e90-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/1087c900-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 38,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 3,
+        "desc": "本案为简美风格，色彩质朴，讲究材质的品质，反映出业主对生活的个性追求，家具和整体风格体现出主人高雅的生活品味，明亮的客厅，温馨的房间，一切都是如此恰当合适。",
+        "title": "绿地名邸公馆",
+        "id": 229,
+        "images": [
+            "map/156b2890-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/1963b2f0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/1ecdceb0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "160",
+        "upload": true
+    },
+    {
+        "buildId": 29,
+        "cityId": 2,
+        "areaId": 12,
+        "styleId": 3,
+        "desc": "本案为简美风格，色彩质朴，讲究材质的品质，反映出业主对生活的个性追求，家具和整体风格体现出主人高雅的生活品味，明亮的客厅，温馨的房间，一切都是如此恰当合适。",
+        "title": "梦湖香郡",
+        "id": 228,
+        "images": [
+            "map/2341caa0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/24de1580-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/260a6080-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 39,
+        "cityId": 2,
+        "areaId": 12,
+        "styleId": 12,
+        "desc": "本案为美式乡村风格，线条柔美，色彩稳重，反应出业主本身对艺术追求的升华，家，本身就是放松身体，放松灵魂的地方，能让你安静，但又不失主人独特的品味。",
+        "title": "世纪江尚",
+        "id": 227,
+        "images": [
+            "map/2702a330-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/2852c9e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/29db8cc0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "140",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 7,
+        "desc": "本案为后现代风格，以黑白色彩为基调，运用现代的装饰材料体现欧式的经典，反映出业主对生活追求高品质和时尚，家具和整体风格体现出主人高雅的生活品味，明亮的客厅，温馨的房间，一切都是如此恰当合适。",
+        "title": "复地东湖国际",
+        "id": 225,
+        "images": [
+            "map/2b1cbf50-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/2c222160-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 9,
+        "cityId": 2,
+        "areaId": 13,
+        "styleId": 1,
+        "desc": "本案为欧式风格，色彩沉稳，材质讲究，业主对生活追求品质和时尚，家具和整体风格体现出主人高雅的生活品味，明亮的客厅，温馨的房间，一切都是如此恰当合适。",
+        "title": "泛海国际",
+        "id": 224,
+        "images": [
+            "map/2d1226b0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/2ec2bce0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "180",
+        "upload": true
+    },
+    {
+        "buildId": 37,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 3,
+        "desc": null,
+        "title": "驿山高尔夫",
+        "id": 215,
+        "images": [
+            "map/3037a9a0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/3159bb70-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/33a46ec0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/366da0e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/370aa430-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/3b06ff20-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/3ed4d000-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/44b86180-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/477ead70-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/4c375380-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/4e1b7cd0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/52ce7d90-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 27,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 7,
+        "desc": null,
+        "title": "恒大金碧天下",
+        "id": 214,
+        "images": [
+            "map/5597d6c0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/57cd2d50-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/598f9dd0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/5bd7b910-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/5edfa1e0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 7,
+        "desc": null,
+        "title": "华侨城",
+        "id": 213,
+        "images": [
+            "map/608ab9d0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/6309c390-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/67e2e9f0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/6fb9bff0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/7426b700-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/761bd040-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 65,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 12,
+        "desc": null,
+        "title": "百瑞景",
+        "id": 212,
+        "images": [
+            "map/7a3f3b30-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/7eef7cd0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/840ed3f0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/89763090-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/8dda9c20-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/9338f810-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/98c9fcc0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/9e2c9e70-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/a3c62ea0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/a9a9c020-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/aeeeeec0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 7,
+        "desc": null,
+        "title": "复地东湖国际",
+        "id": 211,
+        "images": [
+            "map/b44c8760-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/b4e481a0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/b5ac1760-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/b67c86c0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/b73eec60-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/b7fa2610-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/b8a58140-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/b9661220-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ba7efc30-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bb1289a0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bbec6ee0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 1,
+        "desc": null,
+        "title": "复地东湖国际",
+        "id": 210,
+        "images": [
+            "map/bc946eb0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bcdbb0e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bd2bccb0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bd7b4c40-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bdbbfec0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/be1ce370-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/be4971b0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/be8b0e90-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/becfdfc0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 9,
+        "cityId": 2,
+        "areaId": 13,
+        "styleId": 1,
+        "desc": null,
+        "title": "泛海国际",
+        "id": 209,
+        "images": [
+            "map/bf185a70-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bf4a66f0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bf7dabf0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/bfc5d880-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c064feb0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c09165e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c0c34b50-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c0fa87f0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c1314f60-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c16aaee0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c1925b20-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c1b94410-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c2531310-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c2817610-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 24,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 2,
+        "desc": null,
+        "title": "融侨华府",
+        "id": 208,
+        "images": [
+            "map/c2a41940-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c31e5250-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c3999cd0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c3e48880-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c41b28e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c4a6ee20-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c51c4530-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c5661f70-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 65,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 12,
+        "desc": null,
+        "title": "百瑞景",
+        "id": 207,
+        "images": [
+            "map/c5f3e080-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c65bf120-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c6c624a0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c726e240-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c781ac70-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c812c8e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c8675180-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c8d10fd0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c9361330-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/c9a63a20-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ca32e9c0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ca85c4b0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 27,
+        "cityId": 2,
+        "areaId": 21,
+        "styleId": 12,
+        "desc": null,
+        "title": "恒大金碧天下",
+        "id": 206,
+        "images": [
+            "map/cb188ed0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cb79e8b0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cbe2bca0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cc67f230-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ccbd6530-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cd28d130-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cd926870-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cdff0cf0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ce7f3970-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cecbf9e0-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 63,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 11,
+        "desc": null,
+        "title": "复地东湖国际",
+        "id": 198,
+        "images": [
+            "map/cf5d8b80-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cf8c63b0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cfae6aa0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cfd6b320-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/cff0f1e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d0112410-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d02a9f80-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d04860b0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d06a1980-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 5,
+        "desc": null,
+        "title": "华侨城",
+        "id": 196,
+        "images": [
+            "map/d09436c0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d173e860-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d30efac0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d46514e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d5794400-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 39,
+        "cityId": 2,
+        "areaId": 12,
+        "styleId": 7,
+        "desc": "本案定位现代轻奢风格，既不主张追求高档奢华，但又着力于表现区别于其他住宅的特征，从色彩、线条、布局上追求空间的灵动性与品质感。黑白灰为基调，浅金色为点缀，直观给人一种用雍容华贵的视觉冲击，整个空间少了一些典雅和高贵却多了一些甜美和眷注。在软装上面，没有繁杂的修饰与华丽的负担。纵观每个房间，摒弃了浓郁的色彩、华丽的装饰、工艺繁杂的饰品，更多的是掺杂着简单却又精致的气息。个性与原创的诠释。",
+        "title": "世纪江尚",
+        "id": 194,
+        "images": [
+            "map/d8330cd0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d86874b0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d8af41b0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d8e23890-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d9170430-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d9434450-dfad-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 29,
+        "cityId": 2,
+        "areaId": 12,
+        "styleId": 1,
+        "desc": "本案位于整个项目区最佳临湖区域，三层的空间约800㎡，整体硬装风格为现代欧式风格，细节处的雕花点缀彰显古典韵味。整体软装色调为暖黄和米白色在不同的功能分配和人物定位上点缀灰色、粉色、灰蓝色等，设计师在温暖优雅的中性色调基础上搭配不同明度的色块，白色、米白、暖黄等不同材质的软饰，不论是粗旷的皮革、中性的棉麻还是柔软的丝质，在整个空间相得益彰，使整个空间呈现出丰富的层次感，透露着华丽又不失优雅的沉稳格调。",
+        "title": "梦湖香郡",
+        "id": 193,
+        "images": [
+            "map/d97095e0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d9977ed0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d9c349c0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/d9dee810-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/dbfe45a0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/dda34310-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/df658c80-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/e17c1070-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/e3316190-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/e4af4f00-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/e6566f50-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/e83c4650-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ea2e5250-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ebee2ac0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ed8ce6a0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ef60bc40-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/f1653ed0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/f34cc380-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/f5366b10-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/f7504a60-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/f94849d0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/faeb2460-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/fd0f63f0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/ff0d7de0-dfad-11e7-a390-6585f9fdf799.jpg",
+            "map/01cd3a20-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/03734900-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 9,
+        "desc": null,
+        "title": "华侨城",
+        "id": 192,
+        "images": [
+            "map/04eddb10-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/0519cd10-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/0543c340-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/057162f0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/05b26390-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 38,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 4,
+        "desc": null,
+        "title": "绿地名邸公馆",
+        "id": 191,
+        "images": [
+            "map/07712a90-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/079ef150-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/07ce17a0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/07f6ae40-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/081b9b60-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/0841e810-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/08632bb0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/0b1c3130-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/0d472780-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/0f454170-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/0f785f60-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/1182ae50-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/11ae0410-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/11deb100-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 36,
+        "cityId": 2,
+        "areaId": 14,
+        "styleId": 6,
+        "desc": "新中式”风格已逐渐成长为代表中国文化的现代设计风格 本案不刻意地描述某种具象的场景或物件 将清雅含蓄、中国传统家居中的经典元素 与现代设计手法相结合 将东方文化的美感融入现代生活 色彩以烟墨色系为主体基调，点缀极具东方传统气质的祖母绿，孔雀蓝，帝国黄 沿袭了各自的优雅高贵，又在结合之余，创造了新的吸引磁场 使空间既保持着宽敞明亮的视觉观感 又铺陈了儒雅温润的氛围",
+        "title": "月湖琴声",
+        "id": 177,
+        "images": [
+            "map/12152a50-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/15ddf220-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/1811c210-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/1a2a8ff0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/1c3246d0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/20be1080-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/2480e4e0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/26908b00-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/2a404c90-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 38,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 3,
+        "desc": "门厅原墙打通，改用通透的铁艺花格，形成玄关独特造型，恰巧使得改造后的休闲区巧妙的呈现，犹抱琵琶半遮面，若隐却现 沙发墙侧做护墙板，吊顶线条呼应呈现，让美式元素巧妙呈现而不繁琐，干净利索 对改造休闲区原墙门洞扩建和对侧墙体拆改，做圆拱形垭口，成为穿梭厨房，餐厅，客房，客卫和客厅的另一处动线，从两侧皆可进入休闲区，动线明快而且美观。呼应门高设计的影视墙，让影视墙看上去更加整体协调",
+        "title": "绿地名邸公馆",
+        "id": 176,
+        "images": [
+            "map/2e2c2cc0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/2fc172c0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/312c9b80-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/32f3c6f0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/3476e480-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/361ea110-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/37da33c0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/39981060-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/3b2fee70-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 36,
+        "cityId": 2,
+        "areaId": 14,
+        "styleId": 3,
+        "desc": "记忆的仓库，有黄，有蓝，拓染成家的味道。 想象中有一种花，生长在深水中，它天生为绽放的活着。 她们用花瓣作为双脚，轻轻地踮起脚尖，接受水流的微醺。 她们会用自己独有的沉默，在深水中默默飞行，缓缓谢幕。 本案例所定的时尚简美风格有着简约明快的基调， 经典款的家具烘托出低调、时尚的空间氛围。 将原本古板深色的视觉赋予其灵动明亮的色彩，将整个空间变得生机跳跃。 一个理想的空间，应该是随着时间的推进，被空间的主人逐渐地进行完善与填充。",
+        "title": "月湖琴声",
+        "id": 175,
+        "images": [
+            "map/3cebcf40-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/3e886840-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/4050cc30-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/42501ea0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/442ad210-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/45e35780-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/47aa5be0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/48ad7400-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/4998be60-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/4a5a60b0-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 38,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 7,
+        "desc": "爱自由,爱网络，爱晚起，爱夜间大排档，随心所欲的生活，不受世俗牵绊。本案业主是IT人才对家的向往就是舒适，随性。一个沉静放鬆的简约空间，就能抛开门外纷扰享受静谧；一个让你待下来就不想离开的家，便无需追寻外在的奢华美丽。这或许是想象中的美好，但其实也是触手可及的真实生活。在钛金及皮革、大理石这些异材质搭配下，沉稳静谧间亦不经意地渗透出一份成熟与奢华的生活品味，放下工作与外在的纷扰，让人愿意花时间享受家裡，找到再出发的动力。",
+        "title": "绿地名邸公馆",
+        "id": 174,
+        "images": [
+            "map/4b2021b0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/4ca40290-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/4f30a0e0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/51bd6640-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/544e7160-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/57166b00-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/59a1d0d0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/5b6d9020-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/5c357400-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/5ea38dd0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/609a06a0-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 34,
+        "cityId": 2,
+        "areaId": 15,
+        "styleId": 5,
+        "desc": "《雅致》 空间中墙面装饰画面起到的作用就像画龙点睛一样，一个整体和谐的环境中点缀几幅风格适当的装饰画面，不仅能表现出主人的审美情趣，同时也表明主人的生活情调，空间的文化气息就会从这些精心 设计和布置中散发出来，会带给你轻松愉快的生活氛围。 常说“细节决定成败”，细节也能体现品味，想让房间有生机其实不是件难事，只是缺少一些细节的装饰，你可以选择自然气息重、色彩亮丽、有文化底蕴的一些小装饰来点缀空间，同时把握好尺度就能起到耳目一新的的感觉，家里时时刻刻都散发着文化和艺术气息。",
+        "title": "华侨城",
+        "id": 173,
+        "images": [
+            "map/63184d10-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/64ca42d0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/661b2cd0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/67e25840-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/6984bda0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/6b2a7e60-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/6cb6eac0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/6e4971a0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/7170c950-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/74161fc0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/7751e9d0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/79531100-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/7dc14090-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "",
+        "upload": true
+    },
+    {
+        "buildId": 64,
+        "cityId": 2,
+        "areaId": 17,
+        "styleId": 6,
+        "desc": "于都市繁华中闹中取静，打造一片静谧之地。羿天设计完成了该项目的室内、幕墙、景观及软装设计。设计师遵循“物尽其用是为俭”的理念，将一份古朴与清静禅意灌输于空间之中，让人目之所及的一切愈加耐人寻味，身处其中，感受到都市快节奏压力的消弭和身心舒展惬意。 以木为媒 以禅为念 室内设计以现代中式风格为主，以木为媒，以禅为念，利用传统的中式对称格局来定义每个空间。从庭院的曲径通幽到室内的细腻刻画，从地面的木质感到墙面的席纹感，从室内的家私造型到中式格栅的细节等，都流淌着一股浓浓的禅意韵味。",
+        "title": "万达御湖世家",
+        "id": 102,
+        "images": [
+            "map/7fbebe40-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/7ff585b0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/80232560-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/80446900-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/8086f040-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/80c9ecb0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/80ed2c20-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/8117e5a0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/81451020-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/8167da60-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/8190e630-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/81c2f2b0-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/81e63220-dfae-11e7-a390-6585f9fdf799.jpg",
+            "map/8205ef20-dfae-11e7-a390-6585f9fdf799.jpg"
+        ],
+        "measure": "186",
+        "upload": true
+    }
+]

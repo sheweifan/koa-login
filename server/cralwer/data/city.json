@@ -1,0 +1,375 @@
+[
+    {
+        "id": 1,
+        "name": "南京",
+        "ename": "nj",
+        "children": [
+            {
+                "creaId": 1,
+                "creaName": "鼓楼区",
+                "creaCity": 1,
+                "creaKeyword": "glq",
+                "creaIndex": 1,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 2,
+                "creaName": "玄武区",
+                "creaCity": 1,
+                "creaKeyword": "xwq",
+                "creaIndex": 2,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 3,
+                "creaName": "秦淮区",
+                "creaCity": 1,
+                "creaKeyword": "qhq",
+                "creaIndex": 3,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 4,
+                "creaName": "建邺区",
+                "creaCity": 1,
+                "creaKeyword": "jyq",
+                "creaIndex": 4,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 5,
+                "creaName": "雨花台区",
+                "creaCity": 1,
+                "creaKeyword": "yhtq",
+                "creaIndex": 5,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 6,
+                "creaName": "栖霞区",
+                "creaCity": 1,
+                "creaKeyword": "qxq",
+                "creaIndex": 6,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 7,
+                "creaName": "江宁区",
+                "creaCity": 1,
+                "creaKeyword": "jnq",
+                "creaIndex": 7,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 8,
+                "creaName": "浦口区",
+                "creaCity": 1,
+                "creaKeyword": "pkq",
+                "creaIndex": 8,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 9,
+                "creaName": "六合区",
+                "creaCity": 1,
+                "creaKeyword": "lhq",
+                "creaIndex": 9,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 10,
+                "creaName": "溧水区",
+                "creaCity": 1,
+                "creaKeyword": "lsq",
+                "creaIndex": 10,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 11,
+                "creaName": "高淳区",
+                "creaCity": 1,
+                "creaKeyword": "gcq",
+                "creaIndex": 11,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "武汉",
+        "ename": "wh",
+        "children": [
+            {
+                "creaId": 12,
+                "creaName": "江岸区",
+                "creaCity": 2,
+                "creaKeyword": "jaq",
+                "creaIndex": 12,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 13,
+                "creaName": "江汉区",
+                "creaCity": 2,
+                "creaKeyword": "jhq",
+                "creaIndex": 13,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 14,
+                "creaName": "汉阳区",
+                "creaCity": 2,
+                "creaKeyword": "hyq",
+                "creaIndex": 14,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 15,
+                "creaName": "武昌区",
+                "creaCity": 2,
+                "creaKeyword": "wcq",
+                "creaIndex": 15,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 16,
+                "creaName": "青山区",
+                "creaCity": 2,
+                "creaKeyword": "qsq",
+                "creaIndex": 16,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 17,
+                "creaName": "洪山区",
+                "creaCity": 2,
+                "creaKeyword": "hsq",
+                "creaIndex": 17,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 18,
+                "creaName": "东西湖区",
+                "creaCity": 2,
+                "creaKeyword": "dxhq",
+                "creaIndex": 18,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 19,
+                "creaName": "汉南区",
+                "creaCity": 2,
+                "creaKeyword": "hnq",
+                "creaIndex": 19,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 20,
+                "creaName": "蔡甸区",
+                "creaCity": 2,
+                "creaKeyword": "cdq",
+                "creaIndex": 20,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 21,
+                "creaName": "江夏区",
+                "creaCity": 2,
+                "creaKeyword": "jxq",
+                "creaIndex": 21,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 22,
+                "creaName": "黄陂区",
+                "creaCity": 2,
+                "creaKeyword": "hpq",
+                "creaIndex": 22,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 23,
+                "creaName": "新洲区",
+                "creaCity": 2,
+                "creaKeyword": "xzq",
+                "creaIndex": 23,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 29,
+                "creaName": "硚口区",
+                "creaCity": 2,
+                "creaKeyword": "qkq",
+                "creaIndex": null,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 30,
+                "creaName": "沌口区",
+                "creaCity": 2,
+                "creaKeyword": "dkq",
+                "creaIndex": null,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "无锡",
+        "ename": "wx",
+        "children": [
+            {
+                "creaId": 24,
+                "creaName": "锡山区",
+                "creaCity": 3,
+                "creaKeyword": "xsq",
+                "creaIndex": 24,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 25,
+                "creaName": "惠山区",
+                "creaCity": 3,
+                "creaKeyword": "hsq",
+                "creaIndex": 25,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 26,
+                "creaName": "滨湖区",
+                "creaCity": 3,
+                "creaKeyword": "bhq",
+                "creaIndex": 26,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 27,
+                "creaName": "梁溪区",
+                "creaCity": 3,
+                "creaKeyword": "lxq",
+                "creaIndex": 27,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 28,
+                "creaName": "新吴区",
+                "creaCity": 3,
+                "creaKeyword": "xwq",
+                "creaIndex": 28,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 36,
+                "creaName": "南长区",
+                "creaCity": 3,
+                "creaKeyword": "nzq",
+                "creaIndex": 1,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            },
+            {
+                "creaId": 37,
+                "creaName": "崇安区",
+                "creaCity": 3,
+                "creaKeyword": "caq",
+                "creaIndex": 1,
+                "creaEnable": true,
+                "cityName": null,
+                "siteId": null,
+                "cityId": null
+            }
+        ]
+    }
+]
