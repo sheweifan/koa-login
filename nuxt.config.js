@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   head: {
-    title: 'starter',
+    title: '十八匠',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -29,18 +29,21 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~static/css/main.css'],
+  css: [
+    'minireset.css'
+    // '~static/css/main.css'
+  ],
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#3B8070' },
-  plugins: [
-    {
-      src: '~plugins/element-ui',
-      ssr: true
-    }
-  ],
   router: {
     middleware: 'address'
   }
+  // plugins: [
+  //   {
+  //     src: '~plugins/element-ui',
+  //     ssr: true
+  //   }
+  // ]
 }
