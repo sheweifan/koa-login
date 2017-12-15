@@ -1,5 +1,6 @@
 import mongoose, { Schema } from 'mongoose'
 import bcrypt from 'bcrypt'
+import { setMeta } from '../utils'
 
 const SALT = 10
 const MAX_ATTEMPT = 5
@@ -38,14 +39,7 @@ UserSchema.virtual('isLocked').get(function () {
   return !!(this.lockUntil && this.lockUntil > Date.now())
 })
 
-UserSchema.pre('save', function (next) {
-  if (this.isNew) {
-    this.meta.createdAt = this.meta.updatedAt = Date.now()
-  } else {
-    this.meta.updatedAt = Date.now()
-  }
-  next()
-})
+UserSchema.pre('save', setMeta)
 
 UserSchema.pre('save', function (next) {
   if (!this.isModified('password')) return next()

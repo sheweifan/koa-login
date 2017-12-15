@@ -1,4 +1,5 @@
 import mongoose, { Schema } from 'mongoose'
+import { setMeta } from '../utils'
 // 设计师
 let DesignerSchema = new Schema({
   _id: Number,
@@ -37,13 +38,6 @@ let DesignerSchema = new Schema({
   }
 })
 
-DesignerSchema.pre('save', function (next) {
-  if (this.isNew) {
-    this.meta.createdAt = this.meta.updatedAt = Date.now()
-  } else {
-    this.meta.updatedAt = Date.now()
-  }
-  next()
-})
+DesignerSchema.pre('save', setMeta)
 
 mongoose.model('designer', DesignerSchema)
