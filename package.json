@@ -37,7 +37,10 @@
     "source-map-support": "^0.4.15",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.19",
+    "apollo-server-koa": "^1.2.0",
+    "koa-graphql": "^0.7.3",
+    "graphql": "^0.11.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
