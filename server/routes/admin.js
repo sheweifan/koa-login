@@ -1,6 +1,6 @@
 import api from '../api'
 import { controller, post, required } from '../decorators/router'
-// console.log(api)
+
 @controller('/admin')
 export class Admin {
   @post('/login')
