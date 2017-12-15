@@ -139,8 +139,8 @@ const initDesigner = async () => {
   const DesingerLeval = mongoose.model('designerLeval')
   const Desinger = mongoose.model('designer')
 
-  const nowHouseType = await DesingerLeval.find({}).exec()
-  if (nowHouseType.length === 0) {
+  const nowDesingerLeval = await DesingerLeval.find({}).exec()
+  if (nowDesingerLeval.length === 0) {
     console.log('没有设计师等级， 插入设计师等级')
 
     const parseDesignerLeval = _.map(designerLeval, ({id, label}) => ({
