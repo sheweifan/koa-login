@@ -30,9 +30,11 @@ export default {
       }
     }
   },
-
   async logout ({commit}) {
     await axios.post('/admin/logout')
     commit(types.SET_USER, null)
+  },
+  async getDesigner ({ commit }, query) {
+    return Services.getDesigners(query)
   }
 }
