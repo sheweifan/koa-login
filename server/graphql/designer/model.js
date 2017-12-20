@@ -1,7 +1,9 @@
 import {
   GraphQLObjectType,
   GraphQLID,
+  GraphQLInt,
   GraphQLList,
+  GraphQLInputObjectType,
   GraphQLString
 } from 'graphql'
 
@@ -47,6 +49,45 @@ export let designerModel = new GraphQLObjectType({
     },
     services: {
       type: new GraphQLList(buildModel)
+    }
+  }
+})
+
+export let designersModel = new GraphQLObjectType({
+  name: 'designers',
+  fields: {
+    totalCount: {
+      type: GraphQLInt
+    },
+    list: {
+      type: new GraphQLList(designerModel)
+    }
+  }
+})
+
+export let designerInput = new GraphQLInputObjectType({
+  name: 'xgtItemInput',
+  fields: {
+    avatar: {
+      type: GraphQLString
+    },
+    name: {
+      type: GraphQLString
+    },
+    city: {
+      type: GraphQLInt
+    },
+    concept: {
+      type: GraphQLString
+    },
+    leval: {
+      type: GraphQLInt
+    },
+    styles: {
+      type: new GraphQLList(GraphQLInt)
+    },
+    services: {
+      type: new GraphQLList(GraphQLInt)
     }
   }
 })
