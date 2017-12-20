@@ -11,3 +11,8 @@ export const fetchImg = (url, key) => new Promise((resolve, reject) => {
     err ? reject(err) : resolve(ret)
   })
 })
+
+export const getQiniuToken = key => {
+  const putPolicy = new qiniu.rs.PutPolicy(bucket + ':' + key)
+  return putPolicy.token()
+}
