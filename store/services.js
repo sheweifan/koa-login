@@ -4,7 +4,6 @@ const baseurl = ''
 
 class Services {
   getDesigners ({pageIndex, keys, query}) {
-    console.log(pageIndex, keys, query)
     return axios.get(baseurl + '/graphql', {
       params: {
         query: `{
@@ -17,6 +16,9 @@ class Services {
         }`
       }
     })
+  }
+  getQiniuToken (key) {
+    return axios.get(`${baseurl}/qiniu/getToken?key=${key}`)
   }
 }
 

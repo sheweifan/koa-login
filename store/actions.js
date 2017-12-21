@@ -36,5 +36,8 @@ export default {
   },
   async getDesigner ({ commit }, query) {
     return Services.getDesigners(query)
+  },
+  async getQiniuToken ({ commit }, key) {
+    return Services.getQiniuToken(key)
   }
 }
