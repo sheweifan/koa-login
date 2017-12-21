@@ -2,6 +2,7 @@ module.exports = {
   build: {
     babel: {
       plugins: [
+        'lodash',
         ['component', [
           {
             libraryName: 'element-ui',
