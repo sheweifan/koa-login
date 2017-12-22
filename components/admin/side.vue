@@ -46,7 +46,7 @@
         },
         {
           label: '设计大匠',
-          path: '1-2'
+          path: '/admin/doc/designer'
         },
         {
           label: '新闻中心',
