@@ -1,23 +1,36 @@
 import mongoose, { Schema } from 'mongoose'
-import { setMeta } from '../utils'
+import { setMeta, getList, addCountId } from '../utils'
+const { ObjectId } = Schema
 // 设计师
 let DesignerSchema = new Schema({
-  _id: Number,
-  avatar: String,
-  name: String,
+  _id: {
+    type: Number,
+    required: true
+  },
+  avatar: {
+    type: String,
+    required: true
+  },
+  name: {
+    type: String,
+    required: true
+  },
   city: {
     type: Number,
-    ref: 'city'
+    ref: 'city',
+    required: true
   },
   leval: {
     type: Number,
-    ref: 'designerLeval'
+    ref: 'designerLeval',
+    required: true
   },
   concept: String,
   styles: [
     {
       type: Number,
-      ref: 'style'
+      ref: 'style',
+      required: true
     }
   ],
   services: [
@@ -38,6 +51,16 @@ let DesignerSchema = new Schema({
   }
 })
 
+DesignerSchema.index({
+  '$**': 'text'
+})
+
 DesignerSchema.pre('save', setMeta)
+
+DesignerSchema.pre('save', addCountId)
+
+DesignerSchema.statics = {
+  getList
+}
 
 mongoose.model('designer', DesignerSchema)
