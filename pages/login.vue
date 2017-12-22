@@ -3,7 +3,7 @@
     el-form.form
       el-input(v-model="email" placeholder="请输入账号")
       div.form-brank
-      el-input(v-model="password" placeholder="请输入密码")
+      el-input(v-model="password" type="password" placeholder="请输入密码")
       div.form-brank
       el-button.button(type="primary" round :disabled="buttonDisabled" @click="submit") 提交
 </template>
@@ -41,6 +41,9 @@
             duration: 2000
           });
         }
+      },
+      keyup (e) {
+        console.log(e)
       }
     }
   }
