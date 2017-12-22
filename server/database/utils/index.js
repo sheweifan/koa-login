@@ -1,3 +1,5 @@
+import mongoose from 'mongoose'
+
 export const setMeta = function (next) {
   if (this.isNew) {
     this.meta.createdAt = this.meta.updatedAt = Date.now()
@@ -28,4 +30,12 @@ export const getList = async function (pageIndex = 1, pageSize = 10, query = {},
     list,
     totalCount
   }
+}
+
+export const addCountId = async function (next) {
+  const Counter = mongoose.model('counter')
+  if (!this._id) {
+    this._id = Counter.getCount()
+  }
+  next()
 }
