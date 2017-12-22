@@ -16,6 +16,12 @@ import {
 
 const designer = mongoose.model('designer')
 const designerLeval = mongoose.model('designerLeval')
+const populate = {
+  path: 'city leval styles services services',
+  populate: {
+    path: 'city'
+  }
+}
 
 const designersQuery = {
   type: designersModel,
@@ -37,7 +43,7 @@ const designersQuery = {
       }
     }
     const _query = query ? textObj : {}
-    return designer.getList(pageIndex, pageSize, _query, 'city leval styles services')
+    return designer.getList(pageIndex, pageSize, _query, populate)
   }
 }
 
@@ -50,7 +56,7 @@ const designerQuery = {
   },
   resolve (root, {_id}, options) {
     return designer.findOne({_id})
-    .populate('city leval styles services')
+    .populate(populate)
     .exec()
   }
 }

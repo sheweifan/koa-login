@@ -57,7 +57,25 @@ const designerCreate = {
   }
 }
 
+const designerRemove = {
+  type: GraphQLBoolean,
+  args: {
+    _id: {
+      type: new GraphQLNonNull(GraphQLInt)
+    }
+  },
+  async resolve (root, { _id }, options) {
+    try {
+      Designer.remove({_id}).exec()
+      return true
+    } catch (e) {
+      return false
+    }
+  }
+}
+
 export default {
   designerUpdate,
+  designerRemove,
   designerCreate
 }

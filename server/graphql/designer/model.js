@@ -66,7 +66,7 @@ export let designersModel = new GraphQLObjectType({
 })
 
 export let designerInput = new GraphQLInputObjectType({
-  name: 'xgtItemInput',
+  name: 'designerInput',
   fields: {
     avatar: {
       type: GraphQLString
