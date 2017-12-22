@@ -172,6 +172,18 @@ const initDesigner = async () => {
   // console.log(JSON.stringify(data))
 }
 
+const initCounter = async () => {
+  const Counter = mongoose.model('counter')
+
+  const nowCounter = await Counter.find({}).exec()
+  if (nowCounter.length === 0) {
+    console.log('没有计数器， 插入计数器')
+    const newCount = new Counter({count: 2000})
+    await newCount.save()
+    console.log('插入计数器完成')
+  }
+  // const now = await Counter.getCount()
+}
 const initData = async () => {
   await initUser()
   await initMapTypes()
@@ -179,6 +191,7 @@ const initData = async () => {
   await initCity()
   await initBuild()
   await initMap()
+  await initCounter()
 }
 
 fs.readdirSync(modals)
