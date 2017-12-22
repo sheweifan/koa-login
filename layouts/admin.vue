@@ -17,6 +17,9 @@
     components: {
       side,
       navbar
+    },
+    created () {
+      this.$store.dispatch('getTypes')
     }
   }
 </script>
