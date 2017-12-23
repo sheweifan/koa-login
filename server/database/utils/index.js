@@ -34,8 +34,7 @@ export const getList = async function (pageIndex = 1, pageSize = 10, query = {},
 
 export const addCountId = async function (next) {
   const Counter = mongoose.model('counter')
-  if (!this._id) {
-    this._id = Counter.getCount()
-  }
+  this._id = await Counter.getCount()
+  console.log(this)
   next()
 }
