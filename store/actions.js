@@ -1,7 +1,7 @@
 import axios from 'axios'
 import Services from './services'
 import * as types from './types'
-import { type } from 'os';
+import services from './services';
 
 export default {
   nuxtServerInit ({commit}, {req}) {
@@ -43,7 +43,9 @@ export default {
   },
   async getTypes ({ commit }) {
     const {data} = await Services.getTypes()
-    console.log(data.data)
     commit(types.SET_TYPES, data.data)
+  },
+  async putDesigner ({ commit }, data) {
+    return services.putDesigner(data)
   }
 }
