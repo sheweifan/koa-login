@@ -65,7 +65,7 @@ const designerLevalQuery = {
   type: new GraphQLList(designerLevalModel),
   args: {},
   resolve (root, params, options) {
-    return designer.find().exec()
+    return designerLeval.find().exec()
   }
 }
 

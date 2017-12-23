@@ -18,8 +18,8 @@ const Designer = mongoose.model('designer')
 const designerUpdate = {
   type: GraphQLBoolean,
   args: {
-    id: {
-      name: 'id',
+    _id: {
+      name: '_id',
       type: new GraphQLNonNull(GraphQLID)
     },
     data: {
@@ -29,6 +29,7 @@ const designerUpdate = {
   },
   async resolve (root, { id, data }, options) {
     try {
+      delete data._id
       await Designer.update({_id: id}, {$set: data})
       return true
     } catch (e) {
@@ -47,6 +48,7 @@ const designerCreate = {
   },
   async resolve (root, { data }, options) {
     try {
+      delete data._id
       const newDesigner = new Designer(data)
       await newDesigner.save()
       return true
@@ -61,6 +63,7 @@ const designerRemove = {
   type: GraphQLBoolean,
   args: {
     _id: {
+      name: '_id',
       type: new GraphQLNonNull(GraphQLInt)
     }
   },
