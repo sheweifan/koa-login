@@ -4,8 +4,7 @@ const { ObjectId } = Schema
 // 设计师
 let DesignerSchema = new Schema({
   _id: {
-    type: Number,
-    required: true
+    type: Number
   },
   avatar: {
     type: String,
