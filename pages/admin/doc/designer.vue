@@ -84,6 +84,14 @@
               :label="item.name"
               :value="{_id: item._id, name: item.name}"
             )
+        el-form-item(label="等级" prop="leval")
+          el-select(v-model="editing.leval" placeholder="请选择")
+            el-option(
+              v-for="item in designerLeval"
+              :key="item._id"
+              :label="item.label"
+              :value="{_id: item._id, label: item.label}"
+            )
         el-form-item(label="个人说明" prop="concept")
           el-input(v-model="editing.concept" placeholder="请输入" type="textarea" :autosize="true" :maxlength="250")
         el-form-item(label="头像" prop="avatar")
@@ -147,6 +155,7 @@
     name: '',
     avatar: '',
     concept: '',
+    leval: '',
     city: null,
     styles: [],
     services: []
@@ -167,6 +176,9 @@
     city: [
       {required: true, message: '请选择城市', trigger: 'change'}
     ],
+    leval: [
+      {required: true, message: '请选择等级', trigger: 'change'}
+    ],
     styles: [
       {required: true, message: '请添加风格', trigger: 'change'}
     ]
@@ -181,7 +193,7 @@
         currentPage: 1,
         designers: [],
         designerCount: 0,
-        editVisable: false,
+        editVisable: true,
         editing: editingInit,
         postData: {
           token: ''
@@ -268,9 +280,18 @@
       },
 
       editSubmit() {
-        this.$refs['editingDialog'].validate((valid) => {
+        this.$refs['editingDialog'].validate(async valid => {
           if (valid) {
-            console.log('submit!', valid);
+            let edited = {
+              ...this.editing,
+              leval: parseInt(this.editing.leval._id),
+              city: parseInt(this.editing.city._id),
+              services: _map(this.editing.services,item => parseInt(item._id)),
+              styles: _map(this.editing.styles,item => parseInt(item))
+            }
+            const ret = await this.$store.dispatch('putDesigner', edited)
+            console.log(ret)
+            this.editVisable = false
           } else {
             this.$message.error('提交失败，请根据提示检查输入内容')
             return false;
@@ -290,6 +311,7 @@
         'imgPrefix',
         'citys',
         'builds',
+        'designerLeval',
         'styles'
       ])
     },
