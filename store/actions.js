@@ -1,7 +1,7 @@
 import axios from 'axios'
 import Services from './services'
 import * as types from './types'
-import services from './services';
+import services from './services'
 
 export default {
   nuxtServerInit ({commit}, {req}) {
@@ -47,5 +47,8 @@ export default {
   },
   async putDesigner ({ commit }, data) {
     return services.putDesigner(data)
+  },
+  async deleteDesigner ({ commit }, _id) {
+    return services.deleteDesigner(_id)
   }
 }

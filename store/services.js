@@ -4,9 +4,10 @@ import _isArray from 'lodash/isArray'
 import _isObject from 'lodash/isObject'
 import _isNumber from 'lodash/isNumber'
 import _isString from 'lodash/isString'
+import _compact from 'lodash/compact'
 
 const baseurl = ''
-const GparseObject = (value) => {
+const Gparse = (value) => {
   if (_isArray(value)) {
     return JSON.stringify(value)
   } else if (_isObject(value)) {
@@ -14,12 +15,18 @@ const GparseObject = (value) => {
   } else if (_isNumber(value)) {
     return value
   } else if (_isString(value)) {
-    return `"${value}"`
+    return `"${value.replace(/[\n\r]/g, '<br />')}"`
+  } else {
+    return null
   }
 }
 const Gstringify = (data) => {
   return `{
-    ${_map(data, (value, key) => `${key}: ${GparseObject(value)}`).join('\n')}
+    ${_map(data, (value, key) => {
+      if (key === '_id') return null
+      const val = Gparse(value)
+      return val ? `${key}: ${val} ` : null
+    }).join('\n')}
   }`
 }
 
@@ -79,7 +86,7 @@ class Services {
       }
     })
   }
-  putDesigner (data) {
+  async putDesigner (data) {
     const mutation = data._id
     ? `mutation {
       designerUpdate(data: ${Gstringify(data)}, _id: ${data._id})
@@ -87,9 +94,18 @@ class Services {
     : `mutation {
       designerCreate(data: ${Gstringify(data)})
     }`
-    return axios.post(baseurl + '/graphql', {
+    const ret = await axios.post(baseurl + '/graphql', {
       query: mutation
     })
+    return ret.data.data.designerUpdate || ret.data.data.designerCreate
+  }
+  async deleteDesigner (_id) {
+    const ret = await axios.post(baseurl + '/graphql', {
+      query: `mutation {
+        designerRemove(_id: ${_id})
+      }`
+    })
+    return ret.data.data.designerRemove
   }
 }
 
