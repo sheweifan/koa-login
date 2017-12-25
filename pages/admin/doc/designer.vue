@@ -61,6 +61,7 @@
       background
       :current-page.sync="currentPage"
     )
+
     el-dialog(
       title="编辑"
       :visible.sync="editVisable"
@@ -150,6 +151,11 @@
   import uuid from 'node-uuid'
   import _difference from 'lodash/difference'
   import _map from 'lodash/map'
+  import _filter from 'lodash/filter'
+  import _find from 'lodash/find'
+  import _forEach from 'lodash/forEach'
+  import _keys from 'lodash/keys'
+  import _isEqual from 'lodash/isEqual'
 
   const editingInit = {
     name: '',
@@ -193,7 +199,7 @@
         currentPage: 1,
         designers: [],
         designerCount: 0,
-        editVisable: true,
+        editVisable: false,
         editing: editingInit,
         postData: {
           token: ''
@@ -204,12 +210,12 @@
     methods: {
       difference: _difference,
       edit (item = editingInit) {
-
         this.editVisable = true
         this.$nextTick(() => {
           this.$refs['editingDialog'].resetFields()
           this.editing = {
             ...item,
+            concept: item.concept.replace(/\<br \/\>/g, '\n'),
             styles: _map(item.styles, '_id')
           }
         })
@@ -217,7 +223,7 @@
       paginationChange (pageIndex) {
         this.getDesigner(pageIndex)
       },
-      async getDesigner(pageIndex, query="") {
+      async getDesigner (pageIndex, query="") {
         this.designers = []
         const {data: {data}} = await this.$store.dispatch('getDesigner', {
           pageIndex: pageIndex,
@@ -252,17 +258,17 @@
         this.designers = data.designers.list
         this.designerCount = data.designers.totalCount
       },
-      handleSuccess(res, file) {
+      handleSuccess (res, file) {
         this.editing.avatar = res.key
       },
-      handleExceed(res) {
+      handleExceed (res) {
         this.$notify.error({
           title: '错误',
           message: '上传失败，超过个数限制。'
         })
       },
 
-      async beforeUpload(file) {
+      async beforeUpload (file) {
         const isJPG = file.type === 'image/jpeg'
         const isPNG = file.type === 'image/png'
         const isLt2M = file.size / 1024 / 1024 < 2
@@ -273,15 +279,19 @@
         if (!isLt2M) {
           this.$message.error('上传头像图片大小不能超过 2MB!')
         }
-
-        const data = await this.$store.dispatch('getQiniuToken', 'designer/' + uuid.v1() + '.jpg')
-        this.postData = data.data.data
-        return isJPG && isPNG && isLt2m
+        const isOk = isJPG && isPNG && isLt2m
+        if (isOk) {
+          const data = await this.$store.dispatch('getQiniuToken', 'designer/' + uuid.v1() + '.jpg')
+          this.postData = data.data.data
+        }
+        return isOk
       },
 
-      editSubmit() {
+      editSubmit () {
         this.$refs['editingDialog'].validate(async valid => {
+
           if (valid) {
+            // const isNew  = !this.editing._id
             let edited = {
               ...this.editing,
               leval: parseInt(this.editing.leval._id),
@@ -289,9 +299,32 @@
               services: _map(this.editing.services,item => parseInt(item._id)),
               styles: _map(this.editing.styles,item => parseInt(item))
             }
-            const ret = await this.$store.dispatch('putDesigner', edited)
-            console.log(ret)
-            this.editVisable = false
+            // if (!isNew) {
+            //   // is update
+            //   const nowEditing = _find(this.designers, item => item._id = this.editing._id)
+
+            //   if (nowEditing) {
+            //     let edited2 = {}
+            //     _forEach(nowEditing, (value, key) => {
+            //       if (!_isEqual(value, edited[key])) {
+            //         edited2[key] = value
+            //       }
+            //     })
+            //     if (_keys(edited2).length === 0) {
+            //       this.$message.error('数据没有变化，请修改内容后提交')
+            //       return false
+            //     }
+            //     edited = edited2
+            //   }
+            // }
+            const { data: { data } } = await this.$store.dispatch('putDesigner', edited)
+            if ( data.designerUpdate || data.designerCreate){
+              this.$message.success('提交成功')
+              this.editVisable = false
+              this.getDesigner(this.currentPage)
+            } else {
+              this.$message.error('提交失败，请稍后重试')
+            }
           } else {
             this.$message.error('提交失败，请根据提示检查输入内容')
             return false;
