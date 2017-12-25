@@ -54,6 +54,7 @@
           el-button(
             size="mini"
             type="danger"
+            @click="del(scope.row, scope.$index)"
           ) 删除
     el-pagination.admin-pagination(
       layout="prev, pager, next"
@@ -65,7 +66,7 @@
     el-dialog(
       title="编辑"
       :visible.sync="editVisable"
-      width="500px"
+      width="800px"
     )
       el-form(
         v-if="editing"
@@ -103,7 +104,6 @@
             :show-file-list="false"
             :thumbnail-mode="true"
             :on-success="handleSuccess"
-            :on-exceed="handleExceed"
             :before-upload="beforeUpload"
             :data="postData"
           )
@@ -220,6 +220,26 @@
           }
         })
       },
+      async del (item, index) {
+        try {
+          const comfirm =  await this.$confirm('此操作将永久删除该设计师, 是否继续?', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          })
+          const success = await this.$store.dispatch('deleteDesigner', item._id)
+          if (success) {
+            this.$message.success('删除成功!')
+            this.designers.splice(index, 1)
+            if (this.designers.length === 0){
+              this.currentPage = this.currentPage - 1
+            }
+          } else {
+            this.$message.error('删除失败，请稍后重试')
+          }
+        } catch (e) {
+        }
+      },
       paginationChange (pageIndex) {
         this.getDesigner(pageIndex)
       },
@@ -261,12 +281,12 @@
       handleSuccess (res, file) {
         this.editing.avatar = res.key
       },
-      handleExceed (res) {
-        this.$notify.error({
-          title: '错误',
-          message: '上传失败，超过个数限制。'
-        })
-      },
+      // handleExceed (res) {
+      //   this.$notify.error({
+      //     title: '错误',
+      //     message: '上传失败，超过个数限制。'
+      //   })
+      // },
 
       async beforeUpload (file) {
         const isJPG = file.type === 'image/jpeg'
@@ -279,9 +299,10 @@
         if (!isLt2M) {
           this.$message.error('上传头像图片大小不能超过 2MB!')
         }
-        const isOk = isJPG && isPNG && isLt2m
+        const isOk = ( isJPG || isPNG ) && isLt2M
         if (isOk) {
           const data = await this.$store.dispatch('getQiniuToken', 'designer/' + uuid.v1() + '.jpg')
+          console.log(data)
           this.postData = data.data.data
         }
         return isOk
@@ -317,8 +338,8 @@
             //     edited = edited2
             //   }
             // }
-            const { data: { data } } = await this.$store.dispatch('putDesigner', edited)
-            if ( data.designerUpdate || data.designerCreate){
+            const success = await this.$store.dispatch('putDesigner', edited)
+            if ( success ){
               this.$message.success('提交成功')
               this.editVisable = false
               this.getDesigner(this.currentPage)
