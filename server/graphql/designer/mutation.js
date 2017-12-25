@@ -27,10 +27,10 @@ const designerUpdate = {
       type: new GraphQLNonNull(designerInput)
     }
   },
-  async resolve (root, { id, data }, options) {
+  async resolve (root, { _id, data }, options) {
     try {
       delete data._id
-      await Designer.update({_id: id}, {$set: data})
+      await Designer.update({_id}, {$set: data})
       return true
     } catch (e) {
       return false
