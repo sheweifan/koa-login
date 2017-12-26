@@ -98,28 +98,30 @@ const mapsType = async () => {
 
 const mapDetail = async () => {
   const slist = await $.readFile('./data/maps.json')
-  await $.saveFile('./data/mapDetail.json', [])
+  // await $.saveFile('./data/mapDetail.json', [])
   const list = slist.tlist
 
   for (let i = 0; i<list.length; i++){
     console.log(i, prefix[list[i].cityId-1])
     let all = await $.readFile('./data/mapDetail.json')
-    const html = await axios.get(`http://shibajiang.com/h5/detail/${list[i].cityId}/${list[i].worksId}/designWorks/DJdesigner.html`)
-    const h = cheerio.load(html.data)
-    const imgs = []
-    h('.dj-imgbox img').each(function(){
-      imgs.push(h(this).attr('src'))
-    })
-    const address = h('.details p').eq(0).find('span').text()
-    const name = h('.details p').eq(1).find('span').text()
-    const measure = h('.details p').eq(2).find('span').text().replace(/㎡/ig,'')
-    const data = {
-      id: list[i].worksId,
-      imgs, address, name, measure
+      if(!all[i]){
+      const html = await axios.get(`http://shibajiang.com/h5/detail/${list[i].cityId}/${list[i].worksId}/designWorks/DJdesigner.html`)
+      const h = cheerio.load(html.data)
+      const imgs = []
+      h('.dj-imgbox img').each(function(){
+        imgs.push(h(this).attr('src'))
+      })
+      const address = h('.details p').eq(0).find('span').text()
+      const name = h('.details p').eq(1).find('span').text()
+      const measure = h('.details p').eq(2).find('span').text().replace(/㎡/ig,'')
+      const data = {
+        id: list[i].worksId,
+        imgs, address, name, measure
+      }
+      // await $.sleep(200)
+      all.push(data)
+      await $.saveFile('./data/mapDetail.json', all)
     }
-    await $.sleep(200)
-    all.push(data)
-    await $.saveFile('./data/mapDetail.json', all)
   }
 }
 
@@ -357,32 +359,36 @@ const parseMaps = async () => {
   // 去重
   const mapDetail = _.uniq(mapDetailData, 'id')
   let maps = _.uniq(mapsData.tlist, 'worksId')
-
-  console.log(maps.length)
   maps = _.map(maps, item => {
     const build = item.worksTitle
     // console.log(build)
     const _p = _.find(builds, _item => {
       return build.match(_item.name)
     })
+    if(!_p) return
+    const buildId = parseInt(_p.id)
     const d = _.find(mapDetail, _item => parseInt(_item.id) === parseInt(item.worksId))
+    if(!d) return
     const c = _.find(city, _item => _item.name.match(item.cityName))
+    if(!c) return
     const cityId = parseInt(c.id)
     const a = _.find(c.children, _item => _item.creaName.match(item.cityCrea))
+    if(!a) return
     const areaId = parseInt(a.creaId)
-
-    let styleId = _.find(manner, _item => _item.label.match(item.styleName)).id
-    styleId = parseInt(styleId)
+    let styleId = _.find(manner, _item => _item.label.match(item.styleName))
+    if(!styleId) return
+    styleId = parseInt(styleId.id)
 
 
     // console.log(_p, d, a, styleId)
     if(!_p || !d || !a || !styleId) return
 
     return _.assign({
-      buildId: parseInt(_p.id),
+      buildId,
       cityId,
       areaId,
       styleId,
+      desinger: item.worksDesigner,
       desc: item.worksNote,
       title: build,
       id: d.id,
@@ -398,8 +404,8 @@ const parseMaps = async () => {
 }
 
 
-// parseMaps()
-parseDesignerLeval()
+parseMaps()
+// parseDesignerLeval()
 // parseDesigners()
 // designerLeval()
 // parseBuilds()

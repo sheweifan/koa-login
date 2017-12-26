@@ -38,4 +38,15 @@ const uploadMap = async () => {
     }
   }
 }
-uploadMap()
+
+const fixMapLoseDesigner = async () => {
+  let data = await $.readFile(resolve(__dirname, './data/parsed/maps.json'))
+  let list = await $.readFile(resolve(__dirname, './data/parsed/maps.parsed.json'), data)
+  console.log(data.length, list.length)
+  for (let i = 0; i < list.length; i++) {
+    list[i].designer = data[i].desinger
+  }
+  await $.saveFile(resolve(__dirname, './data/parsed/maps.parsed.json'), list)
+}
+// uploadMap()
+// fixMapLoseDesigner()
