@@ -14,7 +14,7 @@
     el-table(
       :data="designers"
       style="width: 100%"
-      v-loading="designers===0"
+      v-loading="designers.length===0"
       stripe
     )
       el-table-column(prop="name" label="名字" width="80")
@@ -49,6 +49,7 @@
         template(scope="scope")
           el-button(
             size="mini"
+            type="warning"
             @click="edit(scope.row)"
           ) 编辑
           el-button(
@@ -388,9 +389,6 @@
 </script>
 
 <style scoped lang="stylus">
-  .admin-pagination
-    padding: 30px 0
-    text-align: center
   .scroll
     max-height: 300px
     overflow-x: hidden
