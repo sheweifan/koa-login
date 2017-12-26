@@ -1,4 +1,5 @@
 import mongoose, { Schema } from 'mongoose'
+import { setMeta, getList, addCountId } from '../utils'
 // 效果图
 let MapSchema = new Schema({
   _id: Number,
@@ -34,16 +35,12 @@ let MapSchema = new Schema({
   }
 })
 
-MapSchema.pre('save', function (next) {
-  if (this.isNew) {
-    this.meta.createdAt = this.meta.updatedAt = Date.now()
-  } else {
-    this.meta.updatedAt = Date.now()
-  }
-  next()
-})
+MapSchema.pre('save', setMeta)
 
-MapSchema.pre('save', function (next) {
-})
+MapSchema.pre('save', addCountId)
+
+MapSchema.statics = {
+  getList
+}
 
 mongoose.model('map', MapSchema)
