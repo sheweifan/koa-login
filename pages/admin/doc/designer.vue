@@ -227,7 +227,7 @@
             cancelButtonText: '取消',
             type: 'warning'
           })
-          const success = await this.$store.dispatch('deleteDesigner', item._id)
+          const success = await this.$store.dispatch('delDesigner', item._id)
           if (success) {
             this.$message.success('删除成功!')
             this.designers.splice(index, 1)
@@ -245,7 +245,7 @@
       },
       async getDesigner (pageIndex, query="") {
         this.designers = []
-        const {data: {data}} = await this.$store.dispatch('getDesigner', {
+        const data = await this.$store.dispatch('getDesigner', {
           pageIndex: pageIndex,
           keys: `
             _id
@@ -275,8 +275,8 @@
           `,
           query: query
         })
-        this.designers = data.designers.list
-        this.designerCount = data.designers.totalCount
+        this.designers = data.list
+        this.designerCount = data.totalCount
       },
       handleSuccess (res, file) {
         this.editing.avatar = res.key
