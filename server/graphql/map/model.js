@@ -10,12 +10,13 @@ import {
 import { cityModel } from '../city/model'
 import { typeModel } from '../types/model'
 import { buildModel } from '../build/model'
+import { designerModel } from '../designer/model'
 
 export let mapModel = new GraphQLObjectType({
   name: 'map',
   fields: {
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     build: {
       type: buildModel
@@ -25,6 +26,9 @@ export let mapModel = new GraphQLObjectType({
     },
     area: {
       type: cityModel
+    },
+    designer: {
+      type: designerModel
     },
     style: {
       type: typeModel

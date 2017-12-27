@@ -7,7 +7,7 @@ import {
 
 const fields = {
   _id: {
-    type: GraphQLID
+    type: GraphQLInt
   },
   name: {
     type: GraphQLString

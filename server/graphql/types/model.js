@@ -1,4 +1,5 @@
 import {
+  GraphQLInt,
   GraphQLObjectType,
   GraphQLID,
   GraphQLString
@@ -6,7 +7,7 @@ import {
 
 const fields = {
   _id: {
-    type: GraphQLID
+    type: GraphQLInt
   },
   label: {
     type: GraphQLString

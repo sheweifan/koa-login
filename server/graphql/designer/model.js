@@ -15,7 +15,7 @@ export let designerLevalModel = new GraphQLObjectType({
   name: 'designerLeval',
   fields: {
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     label: {
       type: GraphQLString
@@ -27,7 +27,7 @@ export let designerModel = new GraphQLObjectType({
   name: 'designer',
   fields: {
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     avatar: {
       type: GraphQLString

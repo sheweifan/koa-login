@@ -15,7 +15,7 @@ import {
 
 const map = mongoose.model('map')
 const populate = {
-  path: 'build city area style',
+  path: 'build city area style designer',
   populate: {
     path: 'city'
   }

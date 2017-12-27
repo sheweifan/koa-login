@@ -37,10 +37,14 @@ const designersQuery = {
     }
   },
   resolve (root, {pageIndex, pageSize, query}, options) {
+    // const textObj = {
+    //   $text: {
+    //     $search: new RegExp(query, 'i')
+    //   }
+    // }
     const textObj = {
-      $text: {
-        $search: query
-      }
+      ...query,
+      name: new RegExp(query.name, 'i')
     }
     const _query = query ? textObj : {}
     return designer.getList(pageIndex, pageSize, _query, populate)
