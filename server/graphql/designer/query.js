@@ -3,6 +3,7 @@ import {
   GraphQLID,
   GraphQLList,
   GraphQLObjectType,
+  GraphQLInputObjectType,
   GraphQLNonNull,
   GraphQLInt,
   GraphQLString
@@ -27,7 +28,17 @@ const designersQuery = {
   type: designersModel,
   args: {
     query: {
-      type: GraphQLString
+      type: new GraphQLInputObjectType({
+        name: 'designersQueryquery',
+        fields: {
+          city: {
+            type: GraphQLInt
+          },
+          name: {
+            type: GraphQLString
+          }
+        }
+      })
     },
     pageIndex: {
       type: new GraphQLNonNull(GraphQLInt)
@@ -42,9 +53,10 @@ const designersQuery = {
     //     $search: new RegExp(query, 'i')
     //   }
     // }
+    console.log(query)
     const textObj = {
       ...query,
-      name: new RegExp(query.name, 'i')
+      ...(query && query.name ? {name: new RegExp(query.name, 'i')} : {})
     }
     const _query = query ? textObj : {}
     return designer.getList(pageIndex, pageSize, _query, populate)
