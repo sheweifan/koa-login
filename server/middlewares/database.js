@@ -81,7 +81,7 @@ const initMap = async () => {
     // console.log(map.length)
     let parseMap = _.uniq(map, 'id')
     // console.log(parseMap.length)
-    parseMap = _.map(parseMap, ({id, buildId, cityId, areaId, styleId, desc, title, images, measure}) => ({
+    parseMap = _.map(parseMap, ({id, designer, buildId, cityId, areaId, styleId, desc, title, images, measure}) => ({
       _id: id,
       build: buildId,
       city: (cityId + 1000),
@@ -89,6 +89,7 @@ const initMap = async () => {
       style: styleId,
       desc,
       title,
+      designer,
       images,
       measure
     }))
@@ -128,7 +129,7 @@ const initCity = async () => {
       name,
       ab,
       leval,
-      parentId: cityId || null
+      parentId: cityId ? (cityId + 1000) : null
     }))
     await City.insertMany(parseCity)
     console.log('插入城市完成')
@@ -201,7 +202,9 @@ fs.readdirSync(modals)
 export const database = app => {
   mongoose.set('debug', true)
 
-  mongoose.connect(config.db)
+  mongoose.connect(config.db, {
+    useMongoClient: true
+  })
 
   mongoose.connection.on('disconneted', () => {
     mongoose.connect(config.db)
