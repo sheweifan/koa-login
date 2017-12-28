@@ -19,6 +19,11 @@ let MapSchema = new Schema({
     type: Number,
     ref: 'style'
   },
+  designer: {
+    type: Number,
+    ref: 'designer',
+    required: true
+  },
   title: String,
   desc: String,
   images: [String],

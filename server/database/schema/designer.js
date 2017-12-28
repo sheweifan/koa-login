@@ -4,7 +4,8 @@ const { ObjectId } = Schema
 // 设计师
 let DesignerSchema = new Schema({
   _id: {
-    type: Number
+    type: Number,
+    index: true
   },
   avatar: {
     type: String,
@@ -50,8 +51,12 @@ let DesignerSchema = new Schema({
   }
 })
 
+// DesignerSchema.index({
+//   name: 'text'
+// })
+
 DesignerSchema.index({
-  '$**': 'text'
+  _id: 1
 })
 
 DesignerSchema.pre('save', setMeta)
