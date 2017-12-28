@@ -49,6 +49,10 @@
           path: '/admin/doc/designer'
         },
         {
+          label: '效果图',
+          path: '/admin/doc/map'
+        },
+        {
           label: '新闻中心',
           path: '1-3'
         },
