@@ -69,6 +69,9 @@ export let mapInput = new GraphQLInputObjectType({
     city: {
       type: GraphQLInt
     },
+    designer: {
+      type: GraphQLInt
+    },
     area: {
       type: GraphQLInt
     },
