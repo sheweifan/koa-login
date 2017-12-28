@@ -41,4 +41,8 @@
       // overflow: auto
       // background-color: #
       line-height: 160px
+
+  .admin-pagination
+    padding: 30px 0
+    text-align: center
 </style>
