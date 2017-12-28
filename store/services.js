@@ -18,7 +18,8 @@ const Gparse = (value) => {
   } else if (_isNumber(value)) {
     return value
   } else if (_isString(value)) {
-    return `"${value.replace(/[\n\r]/g, '<br />')}"`
+    // return `"${value}"`
+    return `"${value.replace(/[\n\r]/g, '\\n')}"`
   } else {
     return null
   }

@@ -1,11 +1,9 @@
 import axios from 'axios'
 import Services from './services'
 import * as types from './types'
-import services from './services'
 
 export default {
   nuxtServerInit ({commit}, {req}) {
-    // console.log(req.session)
     if (req.session && req.session.user) {
       const { email, role, _id } = req.session.user
 
@@ -17,13 +15,10 @@ export default {
       let res = await axios.post('/admin/login', {
         email, password
       })
-
       const { data, success } = res.data
-
       if (success) {
         commit(types.SET_USER, data)
       }
-
       return res.data
     } catch (e) {
       if (e.response.status === 401) {
@@ -35,9 +30,6 @@ export default {
     await axios.post('/admin/logout')
     commit(types.SET_USER, null)
   },
-  async getDesigner ({ commit }, query) {
-    return Services.getDesigners(query)
-  },
   async getQiniuToken ({ commit }, key) {
     return Services.getQiniuToken(key)
   },
@@ -45,10 +37,24 @@ export default {
     const {data} = await Services.getTypes()
     commit(types.SET_TYPES, data.data)
   },
-  async putDesigner ({ commit }, data) {
-    return services.putDesigner(data)
+  // 设计师
+  async getDesigner ({ commit }, query) {
+    return Services.getDesigners(query)
   },
-  async deleteDesigner ({ commit }, _id) {
-    return services.deleteDesigner(_id)
+  async putDesigner ({ commit }, data) {
+    return Services.putDesigner(data)
+  },
+  async delDesigner ({ commit }, _id) {
+    return Services.delDesigner(_id)
+  },
+  // 效果图
+  async getMap ({ commit }, query) {
+    return Services.getMaps(query)
+  },
+  async putMap ({ commit }, data) {
+    return Services.putMap(data)
+  },
+  async delMap ({ commit }, _id) {
+    return Services.delMap(_id)
   }
 }
