@@ -10,9 +10,9 @@
 </template>
 
 <script>
-  import '../plugins/element-ui'
-  import side from '../components/admin/side'
-  import navbar from '../components/admin/navbar'
+  import '~/plugins/element-ui'
+  import side from '~/components/admin/side'
+  import navbar from '~/components/admin/navbar'
   export default {
     components: {
       side,
