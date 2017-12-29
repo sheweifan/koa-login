@@ -1,5 +1,18 @@
 import mongoose from 'mongoose'
 
+export const metaType = {
+  meta: {
+    createdAt: {
+      type: Date,
+      default: Date.now()
+    },
+    updatedAt: {
+      type: Date,
+      default: Date.now()
+    }
+  }
+}
+
 export const setMeta = function (next) {
   if (this.isNew) {
     this.meta.createdAt = this.meta.updatedAt = Date.now()
