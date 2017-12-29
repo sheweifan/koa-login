@@ -6,6 +6,7 @@
     list-type="picture"
     :limit="limit"
     :on-success="success"
+    :on-remove="remove"
     :on-change="change"
     :on-exceed="exceed"
     :before-upload="beforeUpload"
@@ -81,6 +82,9 @@
         this.$emit('success', res, file, fileList)
       },
       change (file, fileList) {
+        this.value = fileList
+      },
+      remove (file, fileList) {
         this.value = fileList
       },
       exceed() {
