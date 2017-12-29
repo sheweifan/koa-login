@@ -1,5 +1,5 @@
 import mongoose, { Schema } from 'mongoose'
-import { setMeta, getList, addCountId } from '../utils'
+import { setMeta, getList, addCountId, metaType } from '../utils'
 const { ObjectId } = Schema
 // 设计师
 let DesignerSchema = new Schema({
@@ -39,16 +39,13 @@ let DesignerSchema = new Schema({
       ref: 'build'
     }
   ],
-  meta: {
-    createdAt: {
-      type: Date,
-      default: Date.now()
-    },
-    updatedAt: {
-      type: Date,
-      default: Date.now()
-    }
-  }
+  ...metaType
+})
+
+// 设计师等级
+let DesignerLevalSchema = new Schema({
+  _id: Number,
+  label: String
 })
 
 // DesignerSchema.index({
@@ -68,3 +65,4 @@ DesignerSchema.statics = {
 }
 
 mongoose.model('designer', DesignerSchema)
+mongoose.model('designerLeval', DesignerLevalSchema)
