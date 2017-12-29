@@ -54,11 +54,11 @@
         },
         {
           label: '新闻中心',
-          path: '1-3'
+          path: '/admin/doc/news'
         },
         {
           label: '加入我们',
-          path: '1-4'
+          path: '/admin/doc/recruit'
         }
       ]
     },
