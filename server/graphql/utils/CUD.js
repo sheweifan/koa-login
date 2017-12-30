@@ -41,8 +41,8 @@ export const getCreate = (Entity, input) => ({
   async resolve (root, { data }, options) {
     try {
       delete data._id
-      const newDesigner = new Entity(data)
-      await Entity.save()
+      const newOne = new Entity(data)
+      await newOne.save()
       return true
     } catch (e) {
       console.log(e)
