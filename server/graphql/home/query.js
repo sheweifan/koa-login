@@ -1,5 +1,8 @@
 import mongoose from 'mongoose'
 import {
+  GraphQLList
+} from 'graphql'
+import {
   indexSwiperModel,
   indexMapModel,
   indexDesignerModel
@@ -10,7 +13,7 @@ const IndexMap = mongoose.model('indexMap')
 const IndexDesigner = mongoose.model('indexDesigner')
 
 const indexSwiperQuery = {
-  type: indexSwiperModel,
+  type: new GraphQLList(indexSwiperModel),
   args: {},
   resolve (root, params, options) {
     return IndexSwiper.find({}).exec()
@@ -18,7 +21,7 @@ const indexSwiperQuery = {
 }
 
 const indexMapQuery = {
-  type: indexMapModel,
+  type: new GraphQLList(indexMapModel),
   args: {},
   resolve (root, params, options) {
     return IndexMap
@@ -29,7 +32,7 @@ const indexMapQuery = {
 }
 
 const indexDesignerQuery = {
-  type: indexDesignerModel,
+  type: new GraphQLList(indexDesignerModel),
   args: {},
   resolve (root, params, options) {
     return IndexDesigner
