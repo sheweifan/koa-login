@@ -37,6 +37,16 @@ export default {
     const {data} = await Services.getTypes()
     commit(types.SET_TYPES, data.data)
   },
+  async getIndexData ({ commit }) {
+    return Services.getIndexData()
+  },
+  async putIndexSwiper ({ commit }, data) {
+    return Services.putIndexSwiper(data)
+  },
+  async delIndexSwiper ({ commit }, _id) {
+    return Services.delIndexSwiper(_id)
+  },
+
   // 设计师
   async getDesigner ({ commit }, query) {
     return Services.getDesigners(query)

@@ -98,7 +98,7 @@ class Services {
   // 更新或者创建数据
   async _put (apiName, data) {
     const mutation = data._id
-    ? `${apiName}Update(data: ${Gstringify(data)}, _id: ${data._id})`
+    ? `${apiName}Update(data: ${Gstringify(data)}, _id: ${Gparse(data._id)})`
     : `${apiName}Create(data: ${Gstringify(data)})`
     const ret = await axios.post(baseurl + '/graphql', {
       query: `mutation {
@@ -115,6 +115,48 @@ class Services {
       }`
     })
     return ret.data.data.res
+  }
+  // 首页数据
+  async getIndexData () {
+    const {data: {data}} = await axios.get(baseurl + '/graphql', {
+      params: {
+        query: `{
+          swiper: indexSwiper {
+            _id
+            image
+            link
+          }
+          map: indexMap {
+            _id
+            image
+            desc
+            map {
+              _id
+            }
+          }
+          designer: indexDesigner {
+            _id
+            designer {
+              _id
+              styles {
+                _id
+                label
+              }
+              name
+            }
+          }
+        }`
+      }
+    })
+    return data
+  }
+  // 修改首页轮播
+  async putIndexSwiper (data) {
+    return this._put('indexSwiper', data)
+  }
+  // 删除首页轮播
+  async delIndexSwiper (data) {
+    return this._del('indexSwiper', data)
   }
 }
 
