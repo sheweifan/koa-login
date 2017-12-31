@@ -40,13 +40,6 @@ export default {
   async getIndexData ({ commit }) {
     return Services.getIndexData()
   },
-  async putIndexSwiper ({ commit }, data) {
-    return Services.putIndexSwiper(data)
-  },
-  async delIndexSwiper ({ commit }, _id) {
-    return Services.delIndexSwiper(_id)
-  },
-
   // 设计师
   async getDesigner ({ commit }, query) {
     return Services.getDesigners(query)
@@ -66,5 +59,27 @@ export default {
   },
   async delMap ({ commit }, _id) {
     return Services.delMap(_id)
-  }
+  },
+  // 首页轮播图
+  async putIndexSwiper ({ commit }, data) {
+    return Services.putIndexSwiper(data)
+  },
+  async delIndexSwiper ({ commit }, _id) {
+    return Services.delIndexSwiper(_id)
+  },
+  // 首页效果图
+  async putIndexMap ({ commit }, data) {
+    return Services.putIndexMap(data)
+  },
+  async delIndexMap ({ commit }, _id) {
+    return Services.delIndexMap(_id)
+  },
+  // 首页设计师
+  async putIndexDesigner ({ commit }, data) {
+    return Services.putIndexDesigner(data)
+  },
+  async delIndexDesigner ({ commit }, _id) {
+    return Services.delIndexDesigner(_id)
+  },
+
 }

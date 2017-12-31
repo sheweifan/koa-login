@@ -1,12 +1,13 @@
 import axios from 'axios'
 import _map from 'lodash/map'
+import _findIndex from 'lodash/findIndex'
 import _isArray from 'lodash/isArray'
 import _isObject from 'lodash/isObject'
 import _isNumber from 'lodash/isNumber'
 import _isString from 'lodash/isString'
 import _compact from 'lodash/compact'
 import _forEach from 'lodash/forEach'
-import _capitalize from 'lodash/capitalize'
+import _upperFirst from 'lodash/upperFirst'
 
 const baseurl = ''
 // Graphql value parser
@@ -111,7 +112,7 @@ class Services {
   async _del (apiName, _id) {
     const ret = await axios.post(baseurl + '/graphql', {
       query: `mutation {
-        res: ${apiName}Remove(_id: ${_id})
+        res: ${apiName}Remove(_id: ${Gparse(_id)})
       }`
     })
     return ret.data.data.res
@@ -151,27 +152,55 @@ class Services {
     return data
   }
   // 修改首页轮播
-  async putIndexSwiper (data) {
-    return this._put('indexSwiper', data)
-  }
+  // async putIndexSwiper (data) {
+  //   return this._put('indexSwiper', data)
+  // }
   // 删除首页轮播
-  async delIndexSwiper (data) {
-    return this._del('indexSwiper', data)
-  }
+  // async delIndexSwiper (data) {
+  //   return this._del('indexSwiper', data)
+  // }
 }
 
-const apiNames = ['designer', 'map']
+const apiNames = [
+  {
+    name: 'designer'
+  },
+  {
+    name: 'map'
+  },
+  {
+    name: 'indexSwiper',
+    exclude: ['get']
+  },
+  {
+    name: 'indexMap',
+    exclude: ['get']
+  },
+  {
+    name: 'indexDesigner',
+    exclude: ['get']
+  }
+]
+
 _forEach(apiNames, item => {
-  const name = _capitalize(item)
-  Services.prototype[`get${name}s`] = function (data) {
-    return this._getLists(item, data)
+  const name = _upperFirst(item.name)
+  if (_findIndex(item.exclude, item => item === 'get') === -1) {
+    Services.prototype[`get${name}s`] = function (data) {
+      return this._getLists(item.name, data)
+    }
   }
-  Services.prototype[`put${name}`] = function (data) {
-    return this._put(item, data)
+  if (_findIndex(item.exclude, item => item === 'put') === -1) {
+    Services.prototype[`put${name}`] = function (data) {
+      return this._put(item.name, data)
+    }
   }
-  Services.prototype[`del${name}`] = function (_id) {
-    return this._del(item, _id)
+  if (_findIndex(item.exclude, item => item === 'del') === -1) {
+    Services.prototype[`del${name}`] = function (_id) {
+      return this._del(item.name, _id)
+    }
   }
 })
+
+console.log(new Services())
 
 export default new Services()
