@@ -1,8 +1,8 @@
 <template lang="pug">
-  el-tabs
-    el-tab-pane(label="轮播图管理")
+  el-tabs(v-model="tabActive")
+    el-tab-pane(name="swiper" label="轮播图管理")
       el-table(:data="swiper")
-        el-table-column(label="图片")
+        el-table-column(label="图片"  width="400")
           template(scope="scope")
             img(v-if="scope.row.image" :src="imgPrefix + scope.row.image + '?imageView2/0/w/200/q/75|imageslim'")
             uploader(:show-file-list="false" @success=" file => {swiper[scope.$index].image = file.key}" v-if="scope.row.edit")
@@ -10,26 +10,55 @@
           template(scope="scope")
             el-input(v-if="scope.row.edit" type="url" placeholder="请输入链接" v-model="scope.row.link")
             div(v-else) {{scope.row.link}}
-        el-table-column(label="操作" width="200")
+        el-table-column(label="操作")
           template(scope="scope")
             el-button(
               size="mini"
               type="warning"
-              @click="swiperEdit(scope.row, scope.$index)"
+              @click="allPut('putIndexSwiper', scope.row, scope.$index)"
             ) {{ scope.row.edit ? '提交' : '修改' }}
             el-button(
               size="mini"
               type="danger"
-              @click="swiperDel(scope.row, scope.$index)"
+              @click="allDel('delIndexSwiper', scope.row._id, scope.$index, 'swiper')"
             ) 删除
       el-button(
         size="medium"
         :style="{margin: '10px 0'}"
         @click="addNewSwipe"
       ) 新增 +
-    el-tab-pane(label="效果图")
-      div 效果图
-    el-tab-pane(label="设计师")
+    el-tab-pane(name="map" label="效果图")
+      el-table(:data="map")
+        el-table-column(label="图片" width="400")
+          template(scope="scope")
+            img(v-if="scope.row.image" :src="imgPrefix + scope.row.image + '?imageView2/0/w/200/q/75|imageslim'")
+            uploader(:show-file-list="false" @success="file => {scope.row.image = file.key}" v-if="scope.row.edit")
+        el-table-column(label="效果图id" width="120")
+          template(scope="scope")
+            el-input(v-if="scope.row.edit" type="number" placeholder="请输入id" v-model.number="scope.row.map")
+            div(v-else) {{scope.row.map}}
+        el-table-column(label="描述" width="350")
+          template(scope="scope")
+            el-input(v-if="scope.row.edit" type="url" placeholder="请输入描述" v-model="scope.row.desc")
+            div(v-else) {{scope.row.desc}}
+        el-table-column(label="操作")
+          template(scope="scope")
+            el-button(
+              size="mini"
+              type="warning"
+              @click="allPut('putIndexMap',scope.row, scope.$index)"
+            ) {{ scope.row.edit ? '提交' : '修改' }}
+            el-button(
+              size="mini"
+              type="danger"
+              @click="allDel('delIndexMap', scope.row._id, scope.$index, 'map')"
+            ) 删除
+      el-button(
+        size="medium"
+        :style="{margin: '10px 0'}"
+        @click="addNewMap"
+      ) 新增 +
+    el-tab-pane(name="designer" label="设计师")
       div 设计师
 </template>
 
@@ -38,10 +67,18 @@
   import _map from 'lodash/map'
   import uploader from '~/components/admin/uploader.vue'
   const SWIPER_MAX_LENGTH = 5
+  const MAP_MAX_LENGTH = 6
   const newSwipe = {
     _id: null,
     image: '',
     link: '',
+    edit: true
+  }
+  const newMap = {
+    _id: null,
+    image: '',
+    map: null,
+    desc: '',
     edit: true
   }
   export default {
@@ -53,7 +90,9 @@
     },
     data () {
       return {
-        swiper: []
+        tabActive: 'map',
+        swiper: [],
+        map: []
       }
     },
     async created () {
@@ -62,9 +101,13 @@
     methods: {
       async getData () {
         const data = await this.$store.dispatch('getIndexData')
-        console.log(data)
         this.swiper = _map(data.swiper, item => ({
           ...item,
+          edit: false
+        }))
+        this.map = _map(data.map, item => ({
+          ...item,
+          map: item.map._id,
           edit: false
         }))
       },
@@ -75,16 +118,45 @@
         }
         this.swiper.push(newSwipe)
       },
-      async swiperEdit (row, index) {
+      addNewMap () {
+        if (this.map.length >= MAP_MAX_LENGTH) {
+          this.$message.error('最多只能五条数据')
+          return
+        }
+        this.map.push(newMap)
+      },
+      async allPut (dispatch, row, index) {
         if (!row.edit) {
-          console.log(this.swiper[index], index)
-          this.swiper[index].edit = true
+          row.edit = true
         } else {
-          const success = await this.$store.dispatch('putIndexSwiper', row)
+          const success = await this.$store.dispatch(dispatch, row)
           if (success) {
             this.$message.success('提交成功')
-            this.swiper[index].edit = false
+            row.edit = false
           }
+        }
+      },
+      async allDel (dispatch, _id, index, key) {
+        if (_id == null) {
+          this[key].splice(index, 1)
+          return
+        }
+        try {
+          const comfirm =  await this.$confirm('将永久删除, 是否继续？', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          })
+          const success = await this.$store.dispatch(dispatch, _id)
+          if (success) {
+            this.$message.success('删除成功!')
+            this[key].splice(index, 1)
+          } else {
+            this.$message.error('删除失败，请稍后重试')
+          }
+
+        } catch (e) {
+          console.log(e)
         }
       }
     },
