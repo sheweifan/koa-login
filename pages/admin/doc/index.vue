@@ -1,5 +1,5 @@
 <template lang="pug">
-  el-tabs(v-model="tabActive")
+  el-tabs(v-model="tabActive" type="border-card")
     el-tab-pane(name="swiper" label="轮播图管理")
       el-table(:data="swiper")
         el-table-column(label="图片"  width="400")
@@ -15,7 +15,7 @@
             el-button(
               size="mini"
               type="warning"
-              @click="allPut('putIndexSwiper', scope.row, scope.$index)"
+              @click="allPut('putIndexSwiper', scope.row, scope.$index, 'swiper')"
             ) {{ scope.row.edit ? '提交' : '修改' }}
             el-button(
               size="mini"
@@ -46,7 +46,7 @@
             el-button(
               size="mini"
               type="warning"
-              @click="allPut('putIndexMap',scope.row, scope.$index)"
+              @click="allPut('putIndexMap',scope.row, scope.$index, 'map')"
             ) {{ scope.row.edit ? '提交' : '修改' }}
             el-button(
               size="mini"
@@ -59,7 +59,28 @@
         @click="addNewMap"
       ) 新增 +
     el-tab-pane(name="designer" label="设计师")
-      div 设计师
+      el-table(:data="designer")
+        el-table-column(label="设计师id")
+          template(scope="scope")
+            el-input(v-if="scope.row.edit" type="number" placeholder="请输入id" v-model.number="scope.row.designer")
+            div(v-else) {{ scope.row.designer }}
+        el-table-column(label="操作")
+          template(scope="scope")
+            el-button(
+              size="mini"
+              type="warning"
+              @click="allPut('putIndexDesigner',scope.row, scope.$index, 'designer')"
+            ) {{ scope.row.edit ? '提交' : '修改' }}
+            el-button(
+              size="mini"
+              type="danger"
+              @click="allDel('delIndexDesigner', scope.row._id, scope.$index, 'designer')"
+            ) 删除
+      el-button(
+        size="medium"
+        :style="{margin: '10px 0'}"
+        @click="addNewDesigner"
+      ) 新增 +
 </template>
 
 <script>
@@ -81,6 +102,10 @@
     desc: '',
     edit: true
   }
+  const newDesigner = {
+    designer: null,
+    edit: true
+  }
   export default {
     middleware: 'auth',
     name: 'admin',
@@ -90,7 +115,8 @@
     },
     data () {
       return {
-        tabActive: 'map',
+        tabActive: 'swiper',
+        designer: [],
         swiper: [],
         map: []
       }
@@ -110,6 +136,11 @@
           map: item.map._id,
           edit: false
         }))
+        this.designer = _map(data.designer, item => ({
+          ...item,
+          designer: item.designer._id,
+          edit: false
+        }))
       },
       addNewSwipe () {
         if (this.swiper.length >= SWIPER_MAX_LENGTH) {
@@ -124,6 +155,9 @@
           return
         }
         this.map.push(newMap)
+      },
+      addNewDesigner () {
+        this.designer.push(newDesigner)
       },
       async allPut (dispatch, row, index) {
         if (!row.edit) {
