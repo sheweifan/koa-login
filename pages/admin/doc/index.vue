@@ -86,6 +86,7 @@
 <script>
   import { mapState } from 'vuex'
   import _map from 'lodash/map'
+  import _clone from 'lodash/clone'
   import uploader from '~/components/admin/uploader.vue'
   const SWIPER_MAX_LENGTH = 5
   const MAP_MAX_LENGTH = 6
@@ -147,17 +148,17 @@
           this.$message.error('最多只能五条数据')
           return
         }
-        this.swiper.push(newSwipe)
+        this.swiper.push(_clone(newSwipe))
       },
       addNewMap () {
         if (this.map.length >= MAP_MAX_LENGTH) {
           this.$message.error('最多只能五条数据')
           return
         }
-        this.map.push(newMap)
+        this.map.push(_clone(newMap))
       },
       addNewDesigner () {
-        this.designer.push(newDesigner)
+        this.designer.push(_clone(newDesigner))
       },
       async allPut (dispatch, row, index) {
         if (!row.edit) {
@@ -167,6 +168,8 @@
           if (success) {
             this.$message.success('提交成功')
             row.edit = false
+          } else {
+            this.$message.error('提交失败，请确认内容正确')
           }
         }
       },
