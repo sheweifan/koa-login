@@ -37,7 +37,12 @@ const indexDesignerQuery = {
   resolve (root, params, options) {
     return IndexDesigner
       .find({})
-      .populate('designer')
+      .populate({
+        path: 'designer',
+        populate: {
+          path: 'styles'
+        }
+      })
       .exec()
   }
 }
