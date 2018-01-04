@@ -160,17 +160,35 @@
       addNewDesigner () {
         this.designer.push(_clone(newDesigner))
       },
-      async allPut (dispatch, row, index) {
+      verifyRow (key, row) {
+        if (key === 'swiper') {
+          return !!row.image
+        } else if (key === 'maps'){
+          return !!row.map && !!row.desc
+        } else {
+          return !!row.designer
+        }
+      },
+      async allPut (dispatch, row, index, key) {
         if (!row.edit) {
           row.edit = true
         } else {
-          const success = await this.$store.dispatch(dispatch, row)
-          if (success) {
-            this.$message.success('提交成功')
-            row.edit = false
-          } else {
+          try {
+            if ( this.verifyRow(key, row) ) {
+              const success = await this.$store.dispatch(dispatch, row)
+              if (success) {
+                this.$message.success('提交成功')
+                row.edit = false
+              } else {
+                throw new Errow('')
+              }
+            } else {
+              throw new Errow('')
+            }
+          } catch (e) {
             this.$message.error('提交失败，请确认内容正确')
           }
+
         }
       },
       async allDel (dispatch, _id, index, key) {
