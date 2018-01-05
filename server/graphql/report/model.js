@@ -25,7 +25,7 @@ export let reportModel = new GraphQLObjectType({
   name: 'report',
   fields: {
     _id: {
-      type: GraphQLInt
+      type: GraphQLID
     },
     title: {
       type: GraphQLString
@@ -36,7 +36,9 @@ export let reportModel = new GraphQLObjectType({
     city: {
       type: cityModel
     },
-    meta: metaModal
+    meta: {
+      type: metaModal
+    }
   }
 })
 
