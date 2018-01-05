@@ -2,11 +2,18 @@ import mongoose, { Schema } from 'mongoose'
 import { setMeta, metaType, getList } from '../utils'
 // 新闻
 let ReportSchema = new Schema({
-  title: String,
-  context: String,
+  title: {
+    type: String,
+    required: true
+  },
+  context: {
+    type: String,
+    required: true
+  },
   city: {
     type: Number,
-    ref: 'city'
+    ref: 'city',
+    required: true
   },
   ...metaType
 })
