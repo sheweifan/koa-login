@@ -9,20 +9,14 @@ import {
 } from 'graphql'
 
 import {
-  mapModel,
-  mapsModel
+  reportModel,
+  reportsModel
 } from './model'
 
-const map = mongoose.model('map')
-const populate = {
-  path: 'build city area style designer',
-  populate: {
-    path: 'city'
-  }
-}
+const Report = mongoose.model('report')
 
-const mapsQuery = {
-  type: mapsModel,
+const reportsQuery = {
+  type: reportsModel,
   args: {
     query: {
       type: GraphQLString
@@ -35,31 +29,25 @@ const mapsQuery = {
     }
   },
   resolve (root, {pageIndex, pageSize, query}, options) {
-    const textObj = {
-      $text: {
-        $search: query
-      }
-    }
-    const _query = query ? textObj : {}
-    return map.getList(pageIndex, pageSize, _query, populate)
+    return Report.getList(pageIndex, pageSize, query, 'city')
   }
 }
 
-const mapQuery = {
-  type: mapModel,
+const reportQuery = {
+  type: reportsModel,
   args: {
     _id: {
       type: new GraphQLNonNull(GraphQLInt)
     }
   },
   resolve (root, {_id}, options) {
-    return map.findOne({_id})
-    .populate(populate)
+    return Report.findOne({_id})
+    .populate('city')
     .exec()
   }
 }
 
 export default {
-  map: mapQuery,
-  maps: mapsQuery
+  report: reportQuery,
+  reports: reportsQuery
 }

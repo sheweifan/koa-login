@@ -53,7 +53,6 @@ const designersQuery = {
     //     $search: new RegExp(query, 'i')
     //   }
     // }
-    console.log(query)
     const textObj = {
       ...query,
       ...(query && query.name ? {name: new RegExp(query.name, 'i')} : {})
@@ -67,7 +66,7 @@ const designerQuery = {
   type: designerModel,
   args: {
     _id: {
-      type: new GraphQLNonNull(GraphQLID)
+      type: new GraphQLNonNull(GraphQLInt)
     }
   },
   resolve (root, {_id}, options) {
