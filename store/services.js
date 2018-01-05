@@ -201,6 +201,4 @@ _forEach(apiNames, item => {
   }
 })
 
-console.log(new Services())
-
 export default new Services()
