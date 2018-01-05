@@ -54,7 +54,7 @@
         },
         {
           label: '新闻中心',
-          path: '/admin/doc/news'
+          path: '/admin/doc/report'
         },
         {
           label: '加入我们',
