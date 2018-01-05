@@ -2,7 +2,7 @@
   el-upload.avatar-uploader(
     action="//up.qbox.me/"
     :show-file-list="showFileList"
-    :multiple="true"
+    :multiple="multiple"
     list-type="picture"
     :limit="limit"
     :on-success="success"
@@ -27,6 +27,10 @@
     name: 'uploader',
     props: {
       showFileList: {
+        type: Boolean,
+        default: true
+      },
+      multiple: {
         type: Boolean,
         default: true
       },
@@ -87,10 +91,10 @@
       remove (file, fileList) {
         this.value = fileList
       },
-      exceed() {
+      exceed () {
         this.$message.warning(`超过限制个数，请删除部分图片后重试`)
       },
-      error() {
+      error () {
         this.$message.warning(`上传出错，请稍后重试`)
       }
     },
