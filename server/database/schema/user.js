@@ -1,6 +1,6 @@
 import mongoose, { Schema } from 'mongoose'
 import bcrypt from 'bcrypt'
-import { setMeta } from '../utils'
+import { setMeta, metaType } from '../utils'
 
 const SALT = 10
 const MAX_ATTEMPT = 5
@@ -23,16 +23,7 @@ let UserSchema = new Schema({
     default: 0
   },
   lockUntil: Number,
-  meta: {
-    createdAt: {
-      type: Date,
-      default: Date.now()
-    },
-    updatedAt: {
-      type: Date,
-      default: Date.now()
-    }
-  }
+  ...metaType
 })
 
 UserSchema.virtual('isLocked').get(function () {
