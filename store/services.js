@@ -169,6 +169,9 @@ const apiNames = [
     name: 'map'
   },
   {
+    name: 'report'
+  },
+  {
     name: 'indexSwiper',
     exclude: ['get']
   },

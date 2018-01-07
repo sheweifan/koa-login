@@ -60,6 +60,16 @@ export default {
   async delMap ({ commit }, _id) {
     return Services.delMap(_id)
   },
+  // 新闻
+  async getReports ({ commit }, query) {
+    return Services.getReports(query)
+  },
+  async putReport ({ commit }, data) {
+    return Services.putReport(data)
+  },
+  async delReport ({ commit }, _id) {
+    return Services.delReport(_id)
+  },
   // 首页轮播图
   async putIndexSwiper ({ commit }, data) {
     return Services.putIndexSwiper(data)
@@ -80,6 +90,5 @@ export default {
   },
   async delIndexDesigner ({ commit }, _id) {
     return Services.delIndexDesigner(_id)
-  },
-
+  }
 }
