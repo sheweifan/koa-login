@@ -5,7 +5,7 @@
 <script>
   export default {
     middleware: 'auth',
-    name: 'news',
+    name: 'recruit',
     layout: 'admin'
   }
 </script>
