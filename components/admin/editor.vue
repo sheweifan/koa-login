@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     div.quill-editor(
-      :content="content"
+      v-model="value"
       :multiple="false"
       placeholder="请输入内容"
       @change="onEditorChange($event)"
@@ -45,6 +45,11 @@
     components: {
       uploader
     },
+    props: {
+      value: {
+        type: String
+      }
+    },
     data () {
       const self = this
       return {
@@ -63,7 +68,7 @@
     },
     methods: {
       onEditorChange ({ editor, html, text }) {
-        this.content = html
+        // this.content = html
         this.$emit('input', html)
       },
       imgHandler (handle) {
@@ -82,7 +87,7 @@
       ...mapState([
         'imgPrefix',
       ])
-    },
+    }
   }
 </script>
 
