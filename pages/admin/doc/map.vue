@@ -222,6 +222,26 @@
           }
         })
       },
+      async del (item, index) {
+        try {
+          const comfirm =  await this.$confirm('将永久删除效果图, 是否继续？', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          })
+          const success = await this.$store.dispatch('delMap', item._id)
+          if (success) {
+            this.$message.success('删除成功!')
+            this.maps.splice(index, 1)
+            if (this.maps.length === 0){
+              this.currentPage = this.currentPage - 1
+            }
+          } else {
+            this.$message.error('删除失败，请稍后重试')
+          }
+        } catch (e) {
+        }
+      },
       async getMap (pageIndex, query="") {
         this.maps = []
         const data = await this.$store.dispatch('getMap', {
