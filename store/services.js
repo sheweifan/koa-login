@@ -9,7 +9,7 @@ import _compact from 'lodash/compact'
 import _forEach from 'lodash/forEach'
 import _upperFirst from 'lodash/upperFirst'
 
-const baseurl = ''
+const baseurl = 'http://localhost:3000'
 // Graphql value parser
 const Gparse = (value) => {
   if (_isArray(value)) {
@@ -20,7 +20,9 @@ const Gparse = (value) => {
     return value
   } else if (_isString(value)) {
     // return `"${value}"`
-    return `"${value.replace(/[\n\r]/g, '\\n')}"`
+    const val = value.replace(/[\n\r]/g, '\\n') // 换行
+      .replace(new RegExp('"', 'ig'), '\\"') // 双引号
+    return `"${val}"`
   } else {
     return null
   }
