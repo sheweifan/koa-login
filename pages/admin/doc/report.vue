@@ -9,30 +9,34 @@
           ) 新增 +
       div.report-side-table
         el-table(
-          :data="report"
+          ref="listTable"
+          :data="list"
           style="width: 200px"
-          v-loading="report.length===0"
+          highlight-current-row
+          v-loading="list.length===0"
           @row-click="itemClick"
         )
           el-table-column(prop="title" label="标题")
+          el-table-column(prop="city.name" label="城市" width="65")
         el-pagination.admin-pagination(
           layout="prev, next"
-          :total="10"
+          :total="totalCount"
           background
+          :current-page.sync="currentPage"
         )
-    div.report-content
+    div.report-content(v-if="editId || editing")
       el-form(
         ref="editingForm"
         :rules="editRule"
         :model="editing"
       )
         el-form-item
-          //- p.title 对话大师现场|每一个设计都有故事
           el-col(:span="17")
             el-form-item(prop="title")
-              el-input(placeholder="请输入标题" v-model="editing.title")
+              el-input(v-if="editing" placeholder="请输入标题" v-model="editing.title")
+              p.title(v-else) {{editHis.title}}
           el-col(:span="1") &nbsp
-          el-col(:span="6")
+          el-col(:span="6" v-if="editing")
             el-form-item(prop="city")
               el-select(v-model="editing.city" placeholder="请选择城市" :style="{width: '100%'}")
                 el-option(
@@ -43,15 +47,23 @@
                   :value="item._id"
                 )
         el-form-item(prop="context")
-          editor(v-model="editing.context")
+          editor(v-model="editing.context" v-if="editing")
+          div(v-else v-html="editHis.context")
         el-form-item
-          el-button() 取消
-          el-button(type="primary" @click="editSubmit") 确定
+          template(v-if="editing")
+            el-button(@click="editing=null") 取消
+            el-button(type="primary" @click="editSubmit") 确定
+          template(v-else)
+            el-button(@click="edit(editHis)") 编辑
+            el-button(type="danger" @click="del(editId)") 删除
 </template>
 
 <script>
   import { mapState } from 'vuex'
   import editor from '~/components/admin/editor.vue'
+  import _find from 'lodash/find'
+  import _findIndex from 'lodash/findIndex'
+  import _clone from 'lodash/clone'
 
   const keys = `
     _id
@@ -59,6 +71,7 @@
     context
     city {
       _id
+      name
     }
   `
 
@@ -74,6 +87,12 @@
     ],
   }
 
+  const editingInit = {
+    title: '',
+    context: '',
+    city: undefined
+  }
+
   export default {
     middleware: 'auth',
     name: 'report',
@@ -81,36 +100,109 @@
     components: {
       editor
     },
+    async asyncData ({store}) {
+      const data = await store.dispatch('getReports', {
+        pageIndex: 1,
+        keys
+      })
+      return {
+        list: data.list,
+        totalCount: data.totalCount
+      }
+    },
     data () {
       return {
-        editing: {
-          title: '',
-          context: '',
-          city: undefined
-        },
-        editRule,
-        report: new Array(10).fill({title: '123'})
+        editId: null,
+        editing: null,
+        currentPage: 1,
+        list: [],
+        totalCount: 0,
+        editRule
       }
     },
     computed: {
+      editHis () {
+        return _find(this.list, {
+          _id: this.editId
+        })
+      },
       ...mapState([
         'citys'
       ])
     },
-    async mounted() {
-      const data = await this.$store.dispatch('getReports', {
-        pageIndex: 1,
-        keys
-      })
-    },
     methods: {
+      edit (editing = editingInit) {
+        this.editing = {
+          ...editing,
+          ...(editing.city ? {city: editing.city._id} : {})
+        }
+      },
+      async del (id) {
+        try {
+          const comfirm =  await this.$confirm('将永久删除, 是否继续？', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          })
+          const success = await this.$store.dispatch('delReport', id)
+          if (success) {
+            const index = _findIndex(this.list, {_id: id})
+
+            this.$message.success('删除成功!')
+            this.list.splice(index, 1)
+            this.editId = null
+            this.editing = null
+            if (this.list.length === 0){
+              this.currentPage = this.currentPage - 1
+            }
+          } else {
+            this.$message.error('删除失败，请稍后重试')
+          }
+        } catch (e) {
+        }
+      },
+      async getList (pageIndex) {
+        const data = await this.$store.dispatch('getReports', {
+          pageIndex,
+          keys
+        })
+        this.list = data.list
+        this.totalCount = data.totalCount
+      },
       itemClick (item) {
-        console.log(item)
+        this.$refs['listTable'].setCurrentRow(item)
+        this.editId = item._id
+        this.editing = null
       },
       editSubmit () {
         this.$refs['editingForm'].validate(async valid => {
-          console.log(valid)
+          if (valid) {
+            let edited = {
+              ...this.editing
+            }
+            const success = await this.$store.dispatch('putReport', edited)
+            if ( success ){
+              this.$message.success('提交成功')
+              if (!edited._id) {
+                this.editId = null
+              }
+              this.editing = null
+              this.getList(this.currentPage)
+            } else {
+              this.$message.error('提交失败，请稍后重试')
+            }
+          } else {
+            this.$message.error('提交失败，请根据提示检查输入内容')
+            return false;
+          }
         })
+      }
+    },
+    watch: {
+      currentPage (currentPage) {
+        this.editing = null
+        this.editId = null
+        this.getList(currentPage)
       }
     }
   }
