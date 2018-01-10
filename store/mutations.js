@@ -4,7 +4,6 @@ export default{
     state.user = user
   },
   [types.SET_TYPES] (state, data) {
-    console.log(types.SET_TYPES, data)
     Object.assign(state, data)
   }
 }
