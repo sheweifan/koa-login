@@ -11,9 +11,9 @@
     //-   el-form-item
     //-     el-button(type="primary" size="medium") 搜索
     el-table(
-      :data="designers"
+      :data="list"
       style="width: 100%"
-      v-loading="designers.length===0"
+      v-loading="list.length===0"
       stripe
     )
       el-table-column(prop="name" label="名字" width="80")
@@ -58,7 +58,7 @@
           ) 删除
     el-pagination.admin-pagination(
       layout="prev, pager, next"
-      :total="designerCount"
+      :total="totalCount"
       background
       :current-page.sync="currentPage"
     )
@@ -124,15 +124,13 @@
 
 <script>
   import { mapState } from 'vuex'
-  import uuid from 'node-uuid'
-  import _difference from 'lodash/difference'
   import _map from 'lodash/map'
-  import _filter from 'lodash/filter'
-  import _find from 'lodash/find'
-  import _forEach from 'lodash/forEach'
-  import _keys from 'lodash/keys'
+  // import _find from 'lodash/find'
+  // import _forEach from 'lodash/forEach'
+  // import _keys from 'lodash/keys'
   import _isEqual from 'lodash/isEqual'
   import uploader from '~/components/admin/uploader.vue'
+
   const editingInit = {
     name: '',
     avatar: '',
@@ -142,6 +140,7 @@
     styles: [],
     services: []
   }
+
   const editRule = {
     name: [
       {required: true, message: '请输入姓名', trigger: 'change'}
@@ -166,6 +165,33 @@
     ]
   }
 
+  const keys = `
+    _id
+    avatar
+    name
+    concept
+    leval {
+      _id
+      label
+    }
+    styles {
+      _id
+      label
+    }
+    services {
+      _id
+      name
+      city {
+        _id
+        name
+      }
+    }
+    city {
+      _id
+      name
+    }
+  `
+
   export default {
     middleware: 'auth',
     name: 'admin',
@@ -173,8 +199,8 @@
     data () {
       return {
         currentPage: 1,
-        designers: [],
-        designerCount: 0,
+        list: [],
+        totalCount: 0,
         editVisable: false,
         editing: editingInit,
         editRule,
@@ -185,7 +211,6 @@
       uploader
     },
     methods: {
-      difference: _difference,
       edit (item = editingInit) {
         this.editVisable = true
         this.$nextTick(() => {CryptoKey
@@ -210,10 +235,11 @@
           const success = await this.$store.dispatch('delDesigner', item._id)
           if (success) {
             this.$message.success('删除成功!')
-            this.designers.splice(index, 1)
-            if (this.designers.length === 0){
-              this.currentPage = this.currentPage - 1
-            }
+            // this.designers.splice(index, 1)
+            // if (this.designers.length === 0){
+            //   this.currentPage = this.currentPage - 1
+            // }
+            this.getList(this.currentPage)
           } else {
             this.$message.error('删除失败，请稍后重试')
           }
@@ -221,42 +247,17 @@
         }
       },
       paginationChange (pageIndex) {
-        this.getDesigner(pageIndex)
+        this.getList(pageIndex)
       },
-      async getDesigner (pageIndex, query="") {
+      async getList (pageIndex, query="") {
         this.designers = []
         const data = await this.$store.dispatch('getDesigner', {
           pageIndex: pageIndex,
-          keys: `
-            _id
-            avatar
-            name
-            concept
-            leval {
-              _id
-              label
-            }
-            styles {
-              _id
-              label
-            }
-            services {
-              _id
-              name
-              city {
-                _id
-                name
-              }
-            }
-            city {
-              _id
-              name
-            }
-          `,
+          keys,
           query: query
         })
-        this.designers = data.list
-        this.designerCount = data.totalCount
+        this.list = data.list
+        this.totalCount = data.totalCount
       },
       editSubmit () {
         this.$refs['editingDialog'].validate(async valid => {
@@ -300,7 +301,7 @@
       }
     },
     created () {
-      this.getDesigner(1)
+      this.getList(1)
     },
     computed: {
       ...mapState([
@@ -314,7 +315,7 @@
     },
     watch: {
       currentPage (currentPage) {
-        this.getDesigner(currentPage)
+        this.getList(currentPage)
       },
       'editing.avatar' () {
         this.$nextTick(() => {
