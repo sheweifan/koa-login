@@ -1,15 +1,29 @@
 <template lang="pug">
   div.container
     el-form.form
-      el-input(v-model="email" placeholder="请输入账号")
+      el-input(v-model="email" placeholder="请输入账号" @keyup.enter.native="submit")
       div.form-brank
-      el-input(v-model="password" type="password" placeholder="请输入密码")
+      el-input(v-model="password" type="password" placeholder="请输入密码" @keyup.enter.native="submit")
       div.form-brank
       el-button.button(type="primary" round :disabled="buttonDisabled" @click="submit") 提交
 </template>
 
 <script>
-  import '../plugins/element-ui'
+  import Vue from 'vue'
+
+  import {
+    Input,
+    Button,
+    Form,
+    Notification
+  } from 'element-ui'
+
+  Vue.use(Input)
+  Vue.use(Button)
+  Vue.use(Form)
+
+  Vue.prototype.$notify = Notification
+
   export default {
     name: 'login',
     computed: {
@@ -23,12 +37,9 @@
         password: ''
       }
     },
-    components: {
-    },
     methods: {
       async submit(){
         const { email, password } = this
-
         const data = await this.$store.dispatch('login', {
           email, password
         })
@@ -41,9 +52,6 @@
             duration: 2000
           });
         }
-      },
-      keyup (e) {
-        console.log(e)
       }
     }
   }

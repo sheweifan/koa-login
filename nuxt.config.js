@@ -2,7 +2,7 @@ module.exports = {
   build: {
     babel: {
       plugins: [
-        'lodash',
+        ['lodash'],
         ['component', [
           {
             libraryName: 'element-ui',
@@ -12,6 +12,7 @@ module.exports = {
       ],
       comments: true
     }
+    // vendor: ['element-ui']
   },
   head: {
     title: '十八匠',
@@ -43,6 +44,7 @@ module.exports = {
   router: {
     middleware: 'address'
   }
+  // ,
   // plugins: [
   //   {
   //     src: '~plugins/element-ui',
