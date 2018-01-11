@@ -1,3 +1,4 @@
+import uuid from 'node-uuid'
 import api from '../api'
 import { controller, get, required } from '../decorators/router'
 
@@ -8,7 +9,8 @@ export class Admin {
     query: ['key']
   })
   async getToken (ctx, next) {
-    const {key} = ctx.query
+    let {key} = ctx.query
+    key = key + '/' + uuid.v1() + '.jpg'
     const token = await api.qiniu.getQiniuToken(key)
 
     ctx.body = {
