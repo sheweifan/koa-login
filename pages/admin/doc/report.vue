@@ -48,7 +48,8 @@
                 )
         el-form-item(prop="context")
           editor(v-model="editing.context" v-if="editing")
-          div(v-else v-html="editHis.context")
+          div.ql-snow(v-else)
+            div.ql-editor(v-html="editHis.context")
         el-form-item
           template(v-if="editing")
             el-button(@click="editing=null") 取消
