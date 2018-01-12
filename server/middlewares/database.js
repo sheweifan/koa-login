@@ -185,6 +185,23 @@ const initCounter = async () => {
   }
   // const now = await Counter.getCount()
 }
+
+const initQuoteState = async () => {
+  const states = [
+    {_id: 1, label: '未回访'},
+    {_id: 2, label: '未回访-无人接听'},
+    {_id: 3, label: '已回访-无意向'},
+    {_id: 4, label: '已回访-号码非本人'},
+    {_id: 5, label: '已回访-稍后联系'}
+  ]
+  const QuoteState = mongoose.model('quoteState')
+  const nowCounter = await QuoteState.find({}).exec()
+  if (nowCounter.length === 0) {
+    console.log('没有报名状态， 插入报名状态')
+    await QuoteState.insertMany(states)
+    console.log('插入报名状态完成')
+  }
+}
 const initData = async () => {
   await initUser()
   await initMapTypes()
@@ -193,6 +210,7 @@ const initData = async () => {
   await initBuild()
   await initMap()
   await initCounter()
+  await initQuoteState()
 }
 
 fs.readdirSync(modals)
