@@ -19,7 +19,7 @@
       el-table-column(prop="name" label="名字" width="80")
       el-table-column(prop="city.name" label="城市" width="70")
       el-table-column(label="头像" width="80")
-        template(scope="scope")
+        template(slot-scope="scope")
           el-popover(
             trigger="hover"
             placement="left"
@@ -28,7 +28,7 @@
             div(slot="reference")
               el-tag(size="medium") 查看
       el-table-column(label="风格")
-        template(scope="scope")
+        template(slot-scope="scope")
           span(
             size="medium"
             v-for="item in scope.row.styles"
@@ -36,7 +36,7 @@
             :style="{'padding-right': '10px'}"
           ) {{item.label}}
       el-table-column(label="服务楼盘")
-        template(scope="scope")
+        template(slot-scope="scope")
           span(
             size="medium"
             v-for="item in scope.row.services"
@@ -45,7 +45,7 @@
           ) {{item.name}}
       //- el-table-column(prop="concept" label="个人说明")
       el-table-column(label="操作" width="200")
-        template(scope="scope")
+        template(slot-scope="scope")
           el-button(
             size="mini"
             type="warning"

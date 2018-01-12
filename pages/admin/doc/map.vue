@@ -13,7 +13,7 @@
       stripe
     )
       el-table-column(type="expand")
-        template(scope="scope")
+        template(slot-scope="scope")
           span(v-for="(item, index) in scope.row.images" :key="index")
             img(:src="imgPrefix + item + '?imageView2/0/w/400/q/75|imageslim'")
       el-table-column(prop="title" label="标题" width="150")
@@ -23,10 +23,10 @@
       el-table-column(prop="measure" label="面积" width="70")
       el-table-column(prop="style.label" label="风格" width="80")
       el-table-column(label="描述")
-        template(scope="scope")
+        template(slot-scope="scope")
           div(v-html="parseBr(scope.row.desc)")
       el-table-column(label="操作" width="200")
-        template(scope="scope")
+        template(slot-scope="scope")
           el-button(
             size="mini"
             type="warning"

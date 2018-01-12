@@ -3,15 +3,15 @@
     el-tab-pane(name="swiper" label="轮播图管理")
       el-table(:data="swiper")
         el-table-column(label="图片"  width="400")
-          template(scope="scope")
+          template(slot-scope="scope")
             img(v-if="scope.row.image" :src="imgPrefix + scope.row.image + '?imageView2/0/w/200/q/75|imageslim'")
             uploader(:show-file-list="false" @success=" file => {swiper[scope.$index].image = file.key}" v-if="scope.row.edit")
         el-table-column(label="链接" width="350")
-          template(scope="scope")
+          template(slot-scope="scope")
             el-input(v-if="scope.row.edit" type="url" placeholder="请输入链接" v-model="scope.row.link")
             div(v-else) {{scope.row.link}}
         el-table-column(label="操作")
-          template(scope="scope")
+          template(slot-scope="scope")
             el-button(
               size="mini"
               type="warning"
@@ -30,19 +30,19 @@
     el-tab-pane(name="map" label="效果图")
       el-table(:data="map")
         el-table-column(label="图片" width="400")
-          template(scope="scope")
+          template(slot-scope="scope")
             img(v-if="scope.row.image" :src="imgPrefix + scope.row.image + '?imageView2/0/w/200/q/75|imageslim'")
             uploader(:show-file-list="false" @success="file => {scope.row.image = file.key}" v-if="scope.row.edit")
         el-table-column(label="效果图id" width="120")
-          template(scope="scope")
+          template(slot-scope="scope")
             el-input(v-if="scope.row.edit" type="number" placeholder="请输入id" v-model.number="scope.row.map")
             div(v-else) {{scope.row.map}}
         el-table-column(label="描述" width="350")
-          template(scope="scope")
+          template(slot-scope="scope")
             el-input(v-if="scope.row.edit" type="url" placeholder="请输入描述" v-model="scope.row.desc")
             div(v-else) {{scope.row.desc}}
         el-table-column(label="操作")
-          template(scope="scope")
+          template(slot-scope="scope")
             el-button(
               size="mini"
               type="warning"
@@ -61,11 +61,11 @@
     el-tab-pane(name="designer" label="设计师")
       el-table(:data="designer")
         el-table-column(label="设计师id")
-          template(scope="scope")
+          template(slot-scope="scope")
             el-input(v-if="scope.row.edit" type="number" placeholder="请输入id" v-model.number="scope.row.designer")
             div(v-else) {{ scope.row.designer }}
         el-table-column(label="操作")
-          template(scope="scope")
+          template(slot-scope="scope")
             el-button(
               size="mini"
               type="warning"
