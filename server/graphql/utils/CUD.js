@@ -4,11 +4,24 @@ import {
   GraphQLNonNull,
   GraphQLBoolean,
   GraphQLInt,
+  GraphQLString,
   GraphQLObjectType
 } from 'graphql'
 
+const returnType = new GraphQLObjectType({
+  name: 'returnType',
+  fields: {
+    success: {
+      type: GraphQLBoolean
+    },
+    message: {
+      type: GraphQLString
+    }
+  }
+})
+
 export const getUpdate = (Entity, input, idType = GraphQLID) => ({
-  type: GraphQLBoolean,
+  type: returnType,
   args: {
     _id: {
       name: '_id',
@@ -23,15 +36,20 @@ export const getUpdate = (Entity, input, idType = GraphQLID) => ({
     try {
       delete data._id
       await Entity.update({_id}, {$set: data})
-      return true
+      return {
+        success: true
+      }
     } catch (e) {
-      return false
+      return {
+        success: true,
+        message: e
+      }
     }
   }
 })
 
 export const getCreate = (Entity, input) => ({
-  type: GraphQLBoolean,
+  type: returnType,
   args: {
     data: {
       name: 'data',
@@ -43,16 +61,20 @@ export const getCreate = (Entity, input) => ({
       delete data._id
       const newOne = new Entity(data)
       await newOne.save()
-      return true
+      return {
+        success: true
+      }
     } catch (e) {
-      console.log(e)
-      return false
+      return {
+        success: true,
+        message: e
+      }
     }
   }
 })
 
 export const getRemove = (Entity, idType = GraphQLID) => ({
-  type: GraphQLBoolean,
+  type: returnType,
   args: {
     _id: {
       name: '_id',
@@ -62,9 +84,14 @@ export const getRemove = (Entity, idType = GraphQLID) => ({
   async resolve (root, { _id }, options) {
     try {
       Entity.remove({_id}).exec()
-      return true
+      return {
+        success: true
+      }
     } catch (e) {
-      return false
+      return {
+        success: true,
+        message: e
+      }
     }
   }
 })
