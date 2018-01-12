@@ -219,7 +219,7 @@ fs.readdirSync(modals)
 
 export const database = app => {
   mongoose.set('debug', true)
-
+  mongoose.Promise = global.Promise
   mongoose.connect(config.db, {
     useMongoClient: true
   })
