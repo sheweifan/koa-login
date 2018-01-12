@@ -55,11 +55,12 @@
         {
           label: '新闻中心',
           path: '/admin/doc/report'
-        },
-        {
-          label: '加入我们',
-          path: '/admin/doc/recruit'
         }
+        // ,
+        // {
+        //   label: '加入我们',
+        //   path: '/admin/doc/recruit'
+        // }
       ]
     },
     {
