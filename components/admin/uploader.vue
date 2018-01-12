@@ -18,7 +18,6 @@
 </template>
 
 <script>
-  import uuid from 'node-uuid'
   import _map from 'lodash/map'
   import _isArray from 'lodash/isArray'
   import { mapState } from 'vuex'
@@ -77,7 +76,7 @@
         }
         const isOk = ( isJPG || isPNG ) && isLt2M
         if (isOk) {
-          const data = await this.$store.dispatch('getQiniuToken', 'designer/' + uuid.v1() + '.jpg')
+          const data = await this.$store.dispatch('getQiniuToken', 'designer')
           this.postData = data.data.data
         }
         return isOk
