@@ -175,7 +175,7 @@
         } else {
           try {
             if ( this.verifyRow(key, row) ) {
-              const success = await this.$store.dispatch(dispatch, row)
+              const { success } = await this.$store.dispatch(dispatch, row)
               if (success) {
                 this.$message.success('提交成功')
                 row.edit = false
@@ -202,7 +202,7 @@
             cancelButtonText: '取消',
             type: 'warning'
           })
-          const success = await this.$store.dispatch(dispatch, _id)
+          const { success } = await this.$store.dispatch(dispatch, _id)
           if (success) {
             this.$message.success('删除成功!')
             this[key].splice(index, 1)

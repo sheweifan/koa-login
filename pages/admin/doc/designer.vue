@@ -232,7 +232,7 @@
             cancelButtonText: '取消',
             type: 'warning'
           })
-          const success = await this.$store.dispatch('delDesigner', item._id)
+          const { success } = await this.$store.dispatch('delDesigner', item._id)
           if (success) {
             this.$message.success('删除成功!')
             // this.designers.splice(index, 1)
@@ -285,7 +285,7 @@
             //     edited = edited2
             //   }
             // }
-            const success = await this.$store.dispatch('putDesigner', edited)
+            const { success } = await this.$store.dispatch('putDesigner', edited)
             if ( success ){
               this.$message.success('提交成功')
               this.editVisable = false

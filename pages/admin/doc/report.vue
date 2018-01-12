@@ -145,7 +145,7 @@
             cancelButtonText: '取消',
             type: 'warning'
           })
-          const success = await this.$store.dispatch('delReport', id)
+          const { success } = await this.$store.dispatch('delReport', id)
           if (success) {
             const index = _findIndex(this.list, {_id: id})
 
@@ -181,7 +181,7 @@
             let edited = {
               ...this.editing
             }
-            const success = await this.$store.dispatch('putReport', edited)
+            const { success } = await this.$store.dispatch('putReport', edited)
             if ( success ){
               this.$message.success('提交成功')
               if (!edited._id) {

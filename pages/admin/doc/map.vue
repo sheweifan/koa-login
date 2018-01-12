@@ -229,7 +229,7 @@
             cancelButtonText: '取消',
             type: 'warning'
           })
-          const success = await this.$store.dispatch('delMap', item._id)
+          const { success } = await this.$store.dispatch('delMap', item._id)
           if (success) {
             this.$message.success('删除成功!')
             this.maps.splice(index, 1)
@@ -265,7 +265,7 @@
               ...this.editing,
               images:  _map(this.editing.images, item => _isString(item) ? item : item.response.key)
             }
-            const success = await this.$store.dispatch('putMap', edited)
+            const { success } = await this.$store.dispatch('putMap', edited)
             if ( success ){
               this.$message.success('提交成功')
               this.editVisable = false
