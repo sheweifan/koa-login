@@ -105,7 +105,10 @@ class Services {
     : `${apiName}Create(data: ${Gstringify(data)})`
     const ret = await axios.post(baseurl + '/graphql', {
       query: `mutation {
-        res: ${mutation}
+        res: ${mutation} {
+          success,
+          message
+        }
       }`
     })
     return ret.data.data.res
@@ -114,7 +117,10 @@ class Services {
   async _del (apiName, _id) {
     const ret = await axios.post(baseurl + '/graphql', {
       query: `mutation {
-        res: ${apiName}Remove(_id: ${Gparse(_id)})
+        res: ${apiName}Remove(_id: ${Gparse(_id)}) {
+          success,
+          message
+        }
       }`
     })
     return ret.data.data.res
