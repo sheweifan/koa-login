@@ -16,9 +16,7 @@ import { typeModel } from '../types/model'
 
 const Quote = mongoose.model('quote')
 const QuoteState = mongoose.model('quoteState')
-const populate = {
-  path: 'city area style quoteState'
-}
+const populate = 'city area style quoteState'
 
 const quotesQuery = {
   type: quotesModel,

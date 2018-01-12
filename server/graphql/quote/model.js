@@ -3,12 +3,13 @@ import {
   GraphQLID,
   GraphQLInt,
   GraphQLList,
+  GraphQLFloat,
   GraphQLInputObjectType,
   GraphQLString
 } from 'graphql'
 
 import { cityModel } from '../city/model'
-import { metaModal } from '../types/model'
+import { metaModal, typeModel } from '../types/model'
 
 export let quoteModel = new GraphQLObjectType({
   name: 'quote',
@@ -20,16 +21,16 @@ export let quoteModel = new GraphQLObjectType({
       type: GraphQLString
     },
     phone: {
-      type: GraphQLString
+      type: GraphQLFloat
     },
     city: {
-      type: GraphQLInt
+      type: cityModel
     },
     area: {
-      type: GraphQLInt
+      type: cityModel
     },
     state: {
-      type: GraphQLInt
+      type: typeModel
     },
     mark: {
       type: GraphQLString
@@ -57,6 +58,21 @@ export let quoteInput = new GraphQLInputObjectType({
   fields: {
     state: {
       type: GraphQLInt
+    },
+    name: {
+      type: GraphQLString
+    },
+    phone: {
+      type: GraphQLFloat
+    },
+    city: {
+      type: GraphQLInt
+    },
+    area: {
+      type: GraphQLInt
+    },
+    mark: {
+      type: GraphQLString
     }
   }
 })
