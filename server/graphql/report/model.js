@@ -8,18 +8,7 @@ import {
 } from 'graphql'
 
 import { cityModel } from '../city/model'
-
-let metaModal = new GraphQLObjectType({
-  name: 'meta',
-  fields: {
-    createdAt: {
-      type: GraphQLString
-    },
-    updatedAt: {
-      type: GraphQLString
-    }
-  }
-})
+import { metaModal } from '../types/model'
 
 export let reportModel = new GraphQLObjectType({
   name: 'report',

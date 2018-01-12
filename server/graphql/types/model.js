@@ -18,3 +18,15 @@ export let typeModel = new GraphQLObjectType({
   name: 'type',
   fields
 })
+
+export let metaModal = new GraphQLObjectType({
+  name: 'meta',
+  fields: {
+    createdAt: {
+      type: GraphQLString
+    },
+    updatedAt: {
+      type: GraphQLString
+    }
+  }
+})
