@@ -12,11 +12,13 @@ import designerQuery from './designer/query'
 import mapQuery from './map/query'
 import homeQuery from './home/query'
 import reportQuery from './report/query'
+import quoteQuery from './quote/query'
 
 import designerMutation from './designer/mutation'
 import mapMutation from './map/mutation'
 import homeMutation from './home/mutation'
 import reportMutation from './report/mutation'
+import quoteMutation from './quote/mutation'
 
 const queryFields = {
   ...typeQuery,
@@ -25,12 +27,14 @@ const queryFields = {
   ...mapQuery,
   ...homeQuery,
   ...reportQuery,
+  ...quoteQuery,
   ...designerQuery
 }
 const mutationFields = {
   ...mapMutation,
   ...homeMutation,
   ...reportMutation,
+  ...quoteMutation,
   ...designerMutation
 }
 
