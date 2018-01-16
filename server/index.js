@@ -6,7 +6,7 @@ import _ from 'lodash'
 let config = require('../nuxt.config.js')
 const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 3000
-const MIDDLEWARES = ['common', 'database', 'router']
+const MIDDLEWARES = ['error', 'log', 'common', 'database', 'router']
 
 class Server {
   constructor () {
