@@ -21,5 +21,9 @@ require('babel-core/register')({
 })
 
 require('babel-polyfill')
-require('./server')
+if (process.env.NODE_ENV === 'production') {
+  require('./build/main.js')
+} else {
+  require('./server')
+}
 // require('./server/cralwer/uploader')
