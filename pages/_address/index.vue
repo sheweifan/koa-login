@@ -8,7 +8,6 @@
     computed: {
     },
     asyncData (context) {
-      // console.log(context)
       return { project: context.params.address }
     },
     data(){
@@ -16,7 +15,6 @@
       }
     },
     created(){
-      console.log(1)
     },
     components: {
     },
