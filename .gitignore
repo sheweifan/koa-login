@@ -17,3 +17,6 @@ build
 
 # 私密文件
 server/config/index.js
+
+# 日志目录
+log
