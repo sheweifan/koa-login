@@ -218,7 +218,7 @@ fs.readdirSync(modals)
   .forEach(file => require(resolve(modals, file)))
 
 export const database = app => {
-  mongoose.set('debug', true)
+  mongoose.set('debug', !(app.env === 'production'))
   mongoose.Promise = global.Promise
   mongoose.connect(config.db, {
     useMongoClient: true
