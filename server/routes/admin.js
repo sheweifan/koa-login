@@ -29,7 +29,6 @@ export class Admin {
         }
       })
     }
-
     return (ctx.body = {
       success: false,
       error: '密码错误'
