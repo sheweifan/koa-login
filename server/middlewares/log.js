@@ -62,7 +62,7 @@ export const log = app => {
     await next()
     const responseTime = Date.now() - start
     logger.info(access(ctx, {
-      responseTime: `响应时间为${responseTime / 1000}s`
+      responseTime: `response time${responseTime / 1000}s`
     }, {}))
   })
 }
