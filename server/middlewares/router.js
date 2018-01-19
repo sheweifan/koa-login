@@ -7,13 +7,3 @@ export const router = app => {
   const route = new Route(app, apiPath)
   route.init()
 }
-
-// export const router = app => {
-//   const router = new Router()
-//   router.all('/wechat-hear', wechatMiddle(config.wechat, reply))
-//   router.all('/wechat-signature', signature)
-//   router.all('/wechat-redirect', redirect)
-//   router.all('/wechat-oauth', oauth)
-//   app.use(router.routes())
-//   app.use(router.allowedMethods())
-// }
