@@ -24,11 +24,16 @@
 
   Vue.prototype.$notify = Notification
 
+  function isEmail(str){
+    var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+    return reg.test(str);
+  }
+
   export default {
     name: 'login',
     computed: {
       buttonDisabled(){
-        return this.email === '' || this.password === ''
+        return !isEmail(this.email) || this.password.length < 6
       }
     },
     data(){
